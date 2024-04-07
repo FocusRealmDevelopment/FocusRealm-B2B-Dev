@@ -12,6 +12,7 @@ function App() {
       <h2>Hellloooooo</h2>
 
       <h1>Welcome.......</h1>
+      <h2>Soethingg</h2>
      </div>
   )
 }
