@@ -1,0 +1,67 @@
+.body {
+  width: 100%;
+}
+
+/* start of logoContainer */
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.logoDiv {
+  width: 80px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #d8dfeb;
+}
+.logoName {
+  font-size: 24px;
+}
+
+/* end of logoContainer */
+
+/* start of studentInfoContainer */
+
+.studentInfoContainer {
+  background-color: #d8dfeb;
+  padding: 4px;
+}
+.schoolLogoContainer {
+  background-color: #fff;
+  width: 100%;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.studentContainer {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.studentContainer > span {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* end of studentInfoContainer */
+
+/* start of navIconsContainer */
+
+.navIconsContainer {
+  width: 100%;
+  padding: 40px 0 0 2px;
+}
+/* end of navIconsContainer */

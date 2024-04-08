@@ -1,0 +1,9 @@
+.body {
+  display: flex;
+}
+.sidePanelBody {
+  width: 25%;
+}
+.mainBody {
+  width: 75%;
+}
