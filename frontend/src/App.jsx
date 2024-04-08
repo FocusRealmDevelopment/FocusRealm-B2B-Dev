@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Navbar from "./components/navbar/Navbar";
+import SidePanel from "./components/sidePanel/SidePanel";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
   return (
-     <div>
-      <h1>Welcome.......</h1>
-     </div>
-  )
+    <div>
+      <div>
+        <SidePanel />
+      </div>
+      <div>
+        <Navbar />
+        <Outlet />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
