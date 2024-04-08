@@ -26,6 +26,12 @@
 .logoName {
   font-size: 24px;
 }
+.logoName span:nth-child(1) {
+  color: rgb(42, 102, 195);
+}
+.logoName span:nth-child(3) {
+  color: rgb(79, 129, 209);
+}
 
 /* end of logoContainer */
 
@@ -54,6 +60,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: rgb(1, 72, 183);
 }
 
 /* end of studentInfoContainer */

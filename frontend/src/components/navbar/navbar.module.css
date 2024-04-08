@@ -1,0 +1,80 @@
+.body {
+  background-color: rgb(216, 223, 235);
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* start of searchBarContainer */
+
+.searchBarContainer {
+  width: 65%;
+  display: flex;
+  border-right: 1px solid black;
+}
+.searchBarContainer > input {
+  width: 90%;
+  padding: 10px 8px 10px 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+}
+.searchBarContainer > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(79, 129, 209);
+  border-radius: 0 8px 8px 0;
+}
+.searchBarContainer > button > svg {
+  color: white;
+}
+
+/* end of searchBarContainer */
+
+/* start of navIcons */
+
+.navIcons {
+  width: 17.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-right: 1px solid black;
+}
+.navIconContainer {
+  position: relative;
+}
+.navIconContainer::after {
+  content: "";
+  width: 8px;
+  aspect-ratio: 1/1;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+}
+.navIconContainer > svg {
+  color: rgb(99, 119, 153);
+}
+
+/* end of navIcons */
+
+/* start of profileInfoContainer */
+
+.profileInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 17.5%;
+}
+.studentName {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* end of profileInfoContainer */
