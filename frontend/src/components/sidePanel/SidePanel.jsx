@@ -12,29 +12,78 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import HelpIcon from "@mui/icons-material/Help";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { NavLink } from "react-router-dom";
+import Switch from "../switch/Switch";
+import { useSelector } from "react-redux";
 
 const SidePanel = () => {
+  const themeMode = useSelector((state) => state.theme.themeMode);
+
   return (
-    <div className={styles.body}>
+    <div
+      style={{
+        backgroundColor: themeMode === "light" ? "#fff" : "rgb(44, 50, 59)",
+      }}
+      className={styles.body}
+    >
       <NavLink to="/">
         <div className={styles.logoContainer}>
-          <div className={styles.logoDiv}>
+          <div
+            style={{
+              backgroundColor:
+                themeMode === "light"
+                  ? "rgb(216, 223, 235)"
+                  : "rgb(38, 43, 51)",
+            }}
+            className={styles.logoDiv}
+          >
             <img src={focusRealmLogo} alt="logo-img" />
           </div>
           <div className={styles.logoName}>
-            <span>Focus</span>
+            <span
+              style={{
+                color:
+                  themeMode === "light"
+                    ? "rgb(42, 102, 195)"
+                    : "rgb(1, 72, 183)",
+              }}
+            >
+              Focus
+            </span>
             <span> </span>
-            <span> Realm</span>
+            <span
+              style={{
+                color:
+                  themeMode === "light"
+                    ? "rgb(79, 129, 209)"
+                    : "rgb(79, 129, 209)",
+              }}
+            >
+              {" "}
+              Realm
+            </span>
           </div>
         </div>
       </NavLink>
-      <div className={styles.studentInfoContainer}>
+      <div
+        style={{
+          backgroundColor:
+            themeMode === "light" ? "rgb(216, 223, 235)" : "rgb(49, 57, 71)",
+        }}
+        className={styles.studentInfoContainer}
+      >
         <div className={styles.schoolLogoContainer}>
           <img src={schoolLogo} alt="school-logo" />
         </div>
         <div className={styles.studentContainer}>
           <img src={profilePic} alt="student-profile-pic" />
-          <span>Student name</span>
+          <span
+            style={{
+              color:
+                themeMode === "light" ? "rgb(1, 72, 183)" : "rgb(79, 129, 209)",
+            }}
+          >
+            Student name
+          </span>
         </div>
       </div>
       <div className={styles.navIconsContainer}>
@@ -57,6 +106,7 @@ const SidePanel = () => {
         />
         <IconContainer icon={HelpIcon} iconName={"Help"} path={"/help"} />
         <IconContainer icon={LogoutIcon} iconName={"Logout"} />
+        <Switch />
       </div>
     </div>
   );

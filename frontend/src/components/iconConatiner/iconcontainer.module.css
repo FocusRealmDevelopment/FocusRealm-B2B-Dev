@@ -40,9 +40,34 @@
 .iconDiv {
   padding-left: 60px;
 }
+/* .iconDiv > svg,
+.iconNameDiv {
+  color: rgb(83, 99, 128);
+}
+
+.darkIconDiv > svg,
+.darkIconDiv {
+  color: rgb(163, 184, 217);
+} */
+
+.light .iconDiv > svg,
+.light .iconNameDiv {
+  color: rgb(83, 99, 128);
+}
+
+.dark .iconDiv > svg,
+.dark .iconNameDiv {
+  color: rgb(163, 184, 217);
+}
+
 .iconDiv > svg,
 .iconNameDiv {
   color: rgb(83, 99, 128);
+}
+
+.darkIconDiv > svg,
+.darkIconDiv {
+  color: rgb(163, 184, 217);
 }
 
 .active > .iconDiv > svg,
