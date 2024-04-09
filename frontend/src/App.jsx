@@ -3,8 +3,11 @@ import Navbar from "./components/navbar/Navbar";
 import SidePanel from "./components/sidePanel/SidePanel";
 import { Outlet } from "react-router-dom";
 import styles from "./app.module.css";
+import { useSelector } from "react-redux";
 
 function App() {
+  const themeMode = useSelector((state) => state.theme.themeMode);
+
   return (
     <div className={styles.body}>
       <div className={styles.sidePanelBody}>
@@ -12,7 +15,17 @@ function App() {
       </div>
       <div className={styles.mainBody}>
         <Navbar />
-        <Outlet />
+        <div
+          style={{
+            width: "100%",
+            // minHeight: "100%",
+            backgroundColor:
+              themeMode === "light" ? "rgb(237, 240, 245)" : "rgb(38, 43, 51)",
+            display: "inline-block",
+          }}
+        >
+          <Outlet />
+        </div>
       </div>
     </div>
   );

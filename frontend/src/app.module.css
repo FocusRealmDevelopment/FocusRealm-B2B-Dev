@@ -1,9 +1,12 @@
 .body {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
+
 .sidePanelBody {
-  width: 25%;
+  min-height: 100vh;
 }
+
 .mainBody {
-  width: 75%;
+  min-height: 100vh;
 }

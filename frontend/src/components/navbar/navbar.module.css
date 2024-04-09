@@ -6,6 +6,13 @@
   align-items: center;
   /* justify-content: center; */
 }
+.darkBody {
+  background-color: rgb(49, 57, 71);
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
 
 /* start of searchBarContainer */
 
@@ -14,7 +21,21 @@
   display: flex;
   border-right: 1px solid black;
 }
+.darkSearchBarContainer {
+  width: 65%;
+  display: flex;
+  border-right: 1px solid lightgray;
+}
 .searchBarContainer > input {
+  width: 90%;
+  padding: 10px 8px 10px 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+}
+.darkSearchBarContainer > input {
+  background-color: rgb(44, 51, 64);
+  color: rgb(163, 184, 217);
   width: 90%;
   padding: 10px 8px 10px 16px;
   border: none;
@@ -29,7 +50,16 @@
   background-color: rgb(79, 129, 209);
   border-radius: 0 8px 8px 0;
 }
-.searchBarContainer > button > svg {
+.darkSearchBarContainer > button {
+  background-color: rgb(1, 72, 183);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+.searchBarContainer > button > svg,
+.darkSearchBarContainer > button > svg {
   color: white;
 }
 
@@ -44,10 +74,10 @@
   justify-content: space-evenly;
   border-right: 1px solid black;
 }
-.navIconContainer {
+.navIcons > div {
   position: relative;
 }
-.navIconContainer::after {
+.navIcons > div::after {
   content: "";
   width: 8px;
   aspect-ratio: 1/1;
@@ -58,6 +88,9 @@
 }
 .navIconContainer > svg {
   color: rgb(99, 119, 153);
+}
+.darkNavIconContainer > svg {
+  color: rgb(163, 184, 217);
 }
 
 /* end of navIcons */
@@ -75,6 +108,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+.darkProfileInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 17.5%;
+  color: white;
 }
 
 /* end of profileInfoContainer */
