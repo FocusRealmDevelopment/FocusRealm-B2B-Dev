@@ -1,0 +1,14 @@
+.body {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 410px) {
+  .body {
+    flex-direction: column;
+    width: 100%;
+  }
+}

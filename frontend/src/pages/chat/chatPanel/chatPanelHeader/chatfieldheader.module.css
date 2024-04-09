@@ -1,0 +1,59 @@
+:root {
+  --chat-field-height: 534px;
+}
+
+.body {
+  width: 100%;
+  height: calc(var(--chat-field-height) * 20%);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.userContainer {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.moreOptionsContainer {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.moreOptionsContainer.lightMoreOptionsContainer svg {
+  color: #7486a4;
+}
+.moreOptionsContainer.darkMoreOptionsContainer svg {
+  color: #a3b8d9;
+}
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.moreOptionsButton {
+  position: relative;
+}
+.optionsContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  top: 30%;
+}
+@media screen and (max-width: 410px) {
+  .moreOptionsButton {
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+  }
+  .optionsContainer {
+    transform: translateY(900%);
+  }
+}

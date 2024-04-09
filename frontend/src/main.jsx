@@ -1,21 +1,30 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { Provider } from "react-redux"
-import { store } from "./store/store.js"
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Home, Calendar, Help, Homework, Login, Signup, Task, Test  } from './pages/!mainExports.js'
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { Provider } from "react-redux";
+import { store } from "./store/store.js";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Home,
+  Calendar,
+  Help,
+  Homework,
+  Login,
+  Signup,
+  Task,
+  Test,
+  ChatBox,
+} from "./pages/!mainExports.js";
 
 const router = createBrowserRouter([
   {
     path: "/login",
-    element: <Login />
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <Signup />
+    element: <Signup />,
   },
   {
     path: "/",
@@ -26,33 +35,37 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/task",
+        path: "task",
         element: <Task />,
       },
       {
-        path: "/calendar",
+        path: "calendar",
         element: <Calendar />,
       },
       {
-        path: "/test",
+        path: "test",
         element: <Test />,
       },
       {
-        path: "/homework",
+        path: "homework",
         element: <Homework />,
       },
       {
-        path: "/help",
+        path: "help",
         element: <Help />,
       },
-    ]
-  }
-])
+      {
+        path: "/chat",
+        element: <ChatBox />,
+      },
+    ],
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Provider store={store} >
+    <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

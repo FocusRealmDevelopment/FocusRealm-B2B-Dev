@@ -6,5 +6,6 @@ import Login from "./loginAndSignUp/login/Login";
 import Signup from "./loginAndSignUp/signup/Signup";
 import Task from "./task/Task";
 import Test from "./test/Test";
+import ChatBox from "./chat/ChatBox";
 
-export { Home, Calendar, Help, Homework, Login, Signup, Task, Test };
+export { Home, Calendar, Help, Homework, Login, Signup, Task, Test, ChatBox };

@@ -28,27 +28,10 @@
 .inActive::before {
   background-color: inherit;
 }
-/* .inActive::before {
-  content: "";
-  display: inline-block;
-  width: 11px;
-  height: 54px;
-  
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-} */
+
 .iconDiv {
   padding-left: 60px;
 }
-/* .iconDiv > svg,
-.iconNameDiv {
-  color: rgb(83, 99, 128);
-}
-
-.darkIconDiv > svg,
-.darkIconDiv {
-  color: rgb(163, 184, 217);
-} */
 
 .light .iconDiv > svg,
 .light .iconNameDiv {

@@ -6,6 +6,7 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import profilePic from "../../assets/images/profilePic.png";
 import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const themeMode = useSelector((state) => state.theme.themeMode);
@@ -37,7 +38,12 @@ const Navbar = () => {
               : styles.darkNavIconContainer
           }`}
         >
-          <ChatBubbleIcon />
+          <NavLink
+            className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            to="/chat"
+          >
+            <ChatBubbleIcon />
+          </NavLink>
         </div>
         <div
           className={`${
@@ -46,7 +52,12 @@ const Navbar = () => {
               : styles.darkNavIconContainer
           }`}
         >
-          <CalendarTodayIcon />
+          <NavLink
+            className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            to="/calendar"
+          >
+            <CalendarTodayIcon />
+          </NavLink>
         </div>
         <div
           className={`${
@@ -55,7 +66,12 @@ const Navbar = () => {
               : styles.darkNavIconContainer
           }`}
         >
-          <NotificationsIcon />
+          <NavLink
+            className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            to="/events"
+          >
+            <NotificationsIcon />
+          </NavLink>
         </div>
       </div>
       <div

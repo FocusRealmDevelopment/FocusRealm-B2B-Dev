@@ -86,11 +86,16 @@
   border-radius: 50%;
   right: 0;
 }
-.navIconContainer > svg {
+.navIconContainer > a > svg {
   color: rgb(99, 119, 153);
 }
-.darkNavIconContainer > svg {
+.darkNavIconContainer > a > svg {
   color: rgb(163, 184, 217);
+}
+
+.navIconContainer > .activeLink > svg,
+.darkNavIconContainer > a > svg {
+  color: black;
 }
 
 /* end of navIcons */
