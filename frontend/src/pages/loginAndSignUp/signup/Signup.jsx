@@ -1,9 +1,11 @@
 // import React from 'react';
 
+import FiSignUp from "../Registration/SignUpPage/FirstSignUp";
+
 const Signup = () => {
   return (
     <div>
-      <h1>This is the Signup Page.</h1>
+      <FiSignUp />
     </div>
   );
 };
