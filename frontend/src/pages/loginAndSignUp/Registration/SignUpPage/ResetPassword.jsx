@@ -1,11 +1,10 @@
-import  { Fragment, useState, useEffect } from "react";
+import { Fragment, useState, useEffect } from "react";
 import "./ResetPassword.css";
 import Loader from "../SignUpPage/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, resetPassword } from "../SignUpPage/userAction";
 import { useAlert } from "react-alert";
 import MetaData from "./MetaData";
-
 
 // eslint-disable-next-line react/prop-types
 const ResetPassword = ({ history, match }) => {

@@ -1,4 +1,4 @@
-import  { Fragment, useState, useEffect } from "react";
+import { Fragment, useState, useEffect } from "react";
 import "./ForgotPassword.css";
 import Loader from "./Loader";
 import { useDispatch, useSelector } from "react-redux";
@@ -75,5 +75,4 @@ const ForgotPassword = () => {
     </Fragment>
   );
 };
-
 export default ForgotPassword;

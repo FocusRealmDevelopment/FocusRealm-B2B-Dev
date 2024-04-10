@@ -1,4 +1,4 @@
-import  { Fragment, useState, useEffect } from "react";
+import { Fragment, useState, useEffect } from "react";
 import "./UpdatePassword.css";
 import Loader from "../SignUpPage/Loader";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,7 +6,6 @@ import { clearErrors, updatePassword } from "../SignUpPage/userAction";
 import { useAlert } from "react-alert";
 import { UPDATE_PASSWORD_RESET } from "../SignUpPage/userConstants";
 import MetaData from "./MetaData";
-
 
 // eslint-disable-next-line react/prop-types
 const UpdatePassword = ({ history }) => {
@@ -30,7 +29,6 @@ const UpdatePassword = ({ history }) => {
 
     dispatch(updatePassword(myForm));
   };
-
   useEffect(() => {
     if (error) {
       alert.error(error);
@@ -65,7 +63,6 @@ const UpdatePassword = ({ history }) => {
                 onSubmit={updatePasswordSubmit}
               >
                 <div className="loginPassword">
-                  
                   <input
                     type="password"
                     placeholder="Old Password"
