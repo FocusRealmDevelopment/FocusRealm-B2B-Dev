@@ -1,0 +1,53 @@
+.body {
+  padding: 10px;
+  width: 30%;
+  border-radius: 6px;
+}
+.body > div {
+  margin-bottom: 18px;
+}
+.userContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+.userContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.userContainer > span.lightIcon {
+  color: #637799;
+}
+.userContainer > span.darkIcon {
+  color: #a3b8d9;
+}
+.searhContainer {
+  width: 100%;
+  position: relative;
+}
+.searhContainer > input {
+  width: 100%;
+  padding: 6px 0 6px 36px;
+  border-radius: 6px;
+  border: none;
+}
+.searhContainer > svg {
+  position: absolute;
+  left: 10px;
+  top: 10%;
+  width: 20px;
+  height: 20px;
+}
+.contactContainer {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 410px) {
+  .body {
+    width: 100%;
+  }
+}

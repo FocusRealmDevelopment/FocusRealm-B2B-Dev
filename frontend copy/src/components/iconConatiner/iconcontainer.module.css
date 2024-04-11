@@ -1,0 +1,59 @@
+.body {
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.active,
+.inActive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.active::before,
+.inActive::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 54px;
+  /*  */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.active::before {
+  background-color: rgb(1, 72, 183);
+}
+.inActive::before {
+  background-color: inherit;
+}
+
+.iconDiv {
+  padding-left: 60px;
+}
+
+.light .iconDiv > svg,
+.light .iconNameDiv {
+  color: rgb(83, 99, 128);
+}
+
+.dark .iconDiv > svg,
+.dark .iconNameDiv {
+  color: rgb(163, 184, 217);
+}
+
+.iconDiv > svg,
+.iconNameDiv {
+  color: rgb(83, 99, 128);
+}
+
+.darkIconDiv > svg,
+.darkIconDiv {
+  color: rgb(163, 184, 217);
+}
+
+.active > .iconDiv > svg,
+.active > .iconNameDiv {
+  color: rgb(1, 72, 183);
+}
