@@ -1,9 +1,9 @@
-// import React from 'react';
-
+ import React from 'react';
+ import LogInd  from "../Registration/LoginPage/LogInd";
 const Login = () => {
   return (
     <div>
-      <h1>This is the Login Page.</h1>
+      <LogInd/>
     </div>
   );
 };

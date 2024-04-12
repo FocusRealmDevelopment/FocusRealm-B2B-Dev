@@ -1,23 +1,29 @@
 import logo from "../images/signlogo.png";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { register } from "../SignUpPage/userAction";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from "./rightpart.module.css";
+import { useNavigate } from "react-router-dom";
+import { clearErrors,  register } from "../../../../actions/userAction";
 
 export default function Rpart() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const { error, loading, isAuthenticated } = useSelector(state => state.user)
+
+
   const [user, setUser] = useState({
     email: "",
     password: "",
     name: "",
     age: "",
-    gender: "",
+    gender: "Male",
     school: "",
     batch: "",
-    avatar: "",
     studentmobile: "",
     parentmobile: "",
   });
+
   const {
     email,
     password,
@@ -29,8 +35,10 @@ export default function Rpart() {
     studentmobile,
     parentmobile,
   } = user;
-  const [avatar, setAvatar] = useState();
-  // const [avatarPreview,setAvatarPreview] =  useState("/Progile5.png");
+
+
+  const [avatar, setAvatar] = useState("");
+  const [avatarPreview, setAvatarPreview] = useState("");
 
   const registerSubmit = (e) => {
     e.preventDefault();
@@ -42,9 +50,9 @@ export default function Rpart() {
     myForm.set("school", school);
     myForm.set("age", age);
     myForm.set("gender", gender);
-    myForm.set("batch", batch);
-    myForm.set("studentmobile", studentmobile);
-    myForm.set("parentmobile", parentmobile);
+    myForm.set("Batch", batch);
+    myForm.set("mobileNumber", studentmobile);
+    myForm.set("mobileNumberParent", parentmobile);
     dispatch(register(myForm));
   };
 
@@ -53,7 +61,7 @@ export default function Rpart() {
       const reader = new FileReader();
       reader.onload = () => {
         if (reader.readyState === 2) {
-          // setAvatarPreview(reader.result)
+          setAvatarPreview(reader.result)
           setAvatar(reader.result);
         }
       };
@@ -62,6 +70,19 @@ export default function Rpart() {
       setUser({ ...user, [e.target.name]: e.target.value });
     }
   };
+
+  useEffect(() => {
+    if (error) {
+      dispatch(clearErrors);
+    }
+
+
+    if (isAuthenticated) {
+      navigate("/account")
+    }
+
+  }, [dispatch, error, navigate, isAuthenticated])
+
 
   return (
     <div
@@ -161,8 +182,8 @@ h-[100%] "
                       id="gender"
                       className="w-[230px] pl-[12px] h-[56px] Bg bg-[#0020511a] rounded-[15px]"
                     >
-                      <option>Male</option>
-                      <option>Female</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
                     </select>
                   </div>
                 </div>
@@ -223,7 +244,7 @@ h-[100%] "
                     value={studentmobile}
                     name="studentmobile"
                     type="text"
-                    pattern="[0-9]{10}"
+                    // pattern="[0-9]{10}"
                     required
                     placeholder="9877*****"
                     className="pl-[20px] Bg w-[374px] bg-[#0020511a] h-[92px] Bg rounded-[15px]"
@@ -238,7 +259,7 @@ h-[100%] "
                     value={parentmobile}
                     name="parentmobile"
                     type="text"
-                    pattern="[0-9]{10}"
+                    // pattern="[0-9]{10}"
                     required
                     placeholder="9877*****"
                     className=" Bg pl-[20px] w-[374px] bg-[#0020511a] h-[92px] rounded-[15px]"
