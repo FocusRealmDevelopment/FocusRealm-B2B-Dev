@@ -1,0 +1,101 @@
+.typ-1 input:checked ~ .chk-1 {
+    background-color: #2196f3;
+}
+.typ-1 input:checked .chk-11 {
+    /* top: 9px; */
+    /* left: 9px; */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.typ-2 input:checked ~ .chk-2 {
+    background-color: #2196f3;
+}
+
+.btn-1 {
+    background-color: #4F81D1;
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family:
+        "Inter var",
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6b7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: 0.2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+.btn-1:hover {
+    background-color: #374151;
+    box-shadow:
+        rgba(45, 35, 66, 0.4) 0 4px 8px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-1px);
+}
+
+.btn-1:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.btn-1:active {
+    transform: translateY(0.15px);
+}
+
+.btn-2 {
+    transition-duration: 0.2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-2:hover {
+    /* background-color: #374151; */
+    box-shadow:
+        rgba(45, 35, 66, 0.4) 0 4px 8px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px inset;
+    transform: translateY(-1px);
+}
+
+.btn-2:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.btn-2:active {
+    transform: translateY(0.15px);
+}
+@media (min-width: 768px) {
+    .btn-1 {
+        padding: 0.75rem 1.5rem;
+    }
+}
