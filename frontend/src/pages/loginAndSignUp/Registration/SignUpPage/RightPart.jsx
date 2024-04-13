@@ -273,7 +273,7 @@ h-[100%] "
                   id="signup"
                   type="submit"
                   className="self-stretch   relative w-[320px] tracking-wide bg-[#0148B7] text-white 
-                  left-[1.5vw] font-semibold  text-center shadow-md shadow-[#0148B7] h-[45px] R rounded-2xl"
+                  left-[1.5vw] font-semibold  text-center shadow-md shadow-[#0148B7] h-[45px]  rounded-2xl"
                 />
               </div>
 
