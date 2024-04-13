@@ -10,24 +10,24 @@ import { loadUser } from "./actions/userAction";
 function App() {
   const themeMode = useSelector((state) => state.theme.themeMode);
 
-
   useEffect(() => {
     store.dispatch(loadUser());
- 
   }, []);
-
 
   return (
     <div className={styles.body}>
       <div className={styles.sidePanelBody}>
         <SidePanel />
       </div>
-      <div className={styles.mainBody}>
+      <div
+        className={styles.mainBody}
+        style={{ display: "flex", flexDirection: "column" }}
+      >
         <Navbar />
         <div
           style={{
-            width: "100%",
-            // minHeight: "100%",
+            flex: 1,
+            paddingBottom: "60px",
             backgroundColor:
               themeMode === "light" ? "rgb(237, 240, 245)" : "rgb(38, 43, 51)",
             display: "inline-block",

@@ -26,7 +26,9 @@ const ChatFieldHeader = () => {
     <div className={styles.body}>
       <div className={styles.userContainer}>
         <Avatar />
-        <span>{username}</span>
+        <span style={{ color: `${themeMode === "light" ? "" : "#cde3e2"}` }}>
+          {username}
+        </span>
       </div>
       <div
         className={`${styles.moreOptionsContainer} ${
@@ -44,7 +46,11 @@ const ChatFieldHeader = () => {
         >
           <MoreHorizIcon />
           {optionsVisible && (
-            <div className={styles.optionsContainer}>
+            <div
+              className={`${styles.optionsContainer} ${
+                themeMode === "light" ? "text-black" : "text-white"
+              }`}
+            >
               <span>Some Option 1</span>
               <span>Some Option 2</span>
               <span

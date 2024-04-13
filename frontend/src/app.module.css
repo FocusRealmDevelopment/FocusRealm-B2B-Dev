@@ -3,10 +3,8 @@
   grid-template-columns: 25% 75%;
 }
 
-.sidePanelBody {
-  min-height: 100vh;
-}
-
+.sidePanelBody,
 .mainBody {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
 }

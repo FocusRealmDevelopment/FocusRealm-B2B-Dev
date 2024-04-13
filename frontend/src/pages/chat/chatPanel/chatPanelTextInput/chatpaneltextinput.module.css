@@ -16,7 +16,6 @@
 .inputContainer > input {
   width: 100%;
   border: none;
-  /* border: 1px solid black; */
   padding: 8px 15% 8px 10%;
   outline: none;
   border-radius: 24px;
@@ -52,4 +51,42 @@
   justify-content: center;
   padding: 8px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    padding: 12px 0;
+  }
+  .inputContainer {
+    width: 100%;
+    padding: 6px 0;
+    /* position: relative; */
+  }
+  .inputContainer > input {
+    padding-right: 55px;
+  }
+  .emojiIcon,
+  .micIcon,
+  .addIcon {
+    top: 25%;
+  }
+  .emojiIcon > svg,
+  .micIcon > svg,
+  .addIcon > svg {
+    width: 16px;
+    aspect-ratio: 1/1;
+  }
+  .emojiIcon {
+    left: 2%;
+  }
+  .micIcon {
+    right: 15%;
+  }
+  .addIcon {
+    right: 2%;
+  }
+  .sendIcon > svg {
+    width: 16px;
+    aspect-ratio: 1/1;
+  }
 }

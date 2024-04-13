@@ -47,13 +47,16 @@
   gap: 4px;
   top: 30%;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 480px) {
   .moreOptionsButton {
     width: 40px;
     height: 40px;
     z-index: 9999;
   }
   .optionsContainer {
-    transform: translateY(900%);
+    transform: translateY(1075%);
+  }
+  .optionsContainer > span {
+    font-size: 10px;
   }
 }

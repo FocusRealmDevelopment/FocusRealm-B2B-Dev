@@ -18,7 +18,9 @@ const ChatBoxSidePanel = () => {
           <span>
             <Avatar />
           </span>
-          <span>Username</span>
+          <span style={{ color: `${themeMode === "light" ? "" : "#cde3e2"}` }}>
+            Username
+          </span>
         </div>
         <span
           className={`${
