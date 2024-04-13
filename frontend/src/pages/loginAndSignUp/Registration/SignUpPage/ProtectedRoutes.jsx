@@ -15,7 +15,6 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
             if (isAuthenticated === false) {
               return <Link to="/login" />;
             }
-
             return <Component {...props} />;
           }}
         />

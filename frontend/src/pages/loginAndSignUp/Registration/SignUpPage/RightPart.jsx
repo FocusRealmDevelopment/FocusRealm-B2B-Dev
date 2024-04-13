@@ -3,20 +3,18 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./rightpart.module.css";
 import { useNavigate } from "react-router-dom";
-import { clearErrors,  register } from "../../../../actions/userAction";
+import { clearErrors, register } from "../../../../actions/userAction";
 import { MdEmail } from "react-icons/md";
 import { IoMdLock } from "react-icons/io";
 import { FaCircleUser } from "react-icons/fa6";
-
-
-
 
 export default function Rpart() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { error, loading, isAuthenticated } = useSelector(state => state.user)
-
+  const { error, loading, isAuthenticated } = useSelector(
+    (state) => state.user
+  );
 
   const [user, setUser] = useState({
     email: "",
@@ -42,7 +40,6 @@ export default function Rpart() {
     parentmobile,
   } = user;
 
-
   const [avatar, setAvatar] = useState("");
   const [avatarPreview, setAvatarPreview] = useState("");
 
@@ -67,7 +64,7 @@ export default function Rpart() {
       const reader = new FileReader();
       reader.onload = () => {
         if (reader.readyState === 2) {
-          setAvatarPreview(reader.result)
+          setAvatarPreview(reader.result);
           setAvatar(reader.result);
         }
       };
@@ -82,13 +79,10 @@ export default function Rpart() {
       dispatch(clearErrors);
     }
 
-
     if (isAuthenticated) {
-      navigate("/account")
+      navigate("/account");
     }
-
-  }, [dispatch, error, navigate, isAuthenticated])
-
+  }, [dispatch, error, navigate, isAuthenticated]);
 
   return (
     <div
@@ -109,41 +103,29 @@ h-[100%] "
           >
             <div className="w-[390px]  h-[896px] flex-col justify-center items-center gap-[15px] absolute left-[10.5vw] top-[15vw] inline-flex">
               <div className="flex-col justify-center items-start gap-[15px] flex">
-
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
-                  
                   <div className="self-stretch text-black dark:text-white text-base font-medium  tracking-wide">
                     Email
                   </div>
 
-
                   <div>
+                    <MdEmail
+                      className="fill-[#0148B7]
+                  size-5 m-4 absolute mt-5"
+                    />
 
-
-
-                  <MdEmail className="fill-[#0148B7]
-                  size-5 m-4 absolute mt-5" />
-
-                  
-
-                    
-                  
-
-
-                  <input 
-                    onChange={registerDataChange}
-                    value={email}
-                    required
-                    name="email"
-                    id="email"
-                    autoComplete="off"
-                    type="email"
-                    placeholder="Enter your Email Address"
-                    className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]" 
-                  />
-                  
+                    <input
+                      onChange={registerDataChange}
+                      value={email}
+                      required
+                      name="email"
+                      id="email"
+                      autoComplete="off"
+                      type="email"
+                      placeholder="Enter your Email Address"
+                      className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
+                    />
                   </div>
-                  
                 </div>
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
                   <div className="self-stretch dark:text-white text-black text-base font-medium  tracking-wide">
@@ -151,41 +133,38 @@ h-[100%] "
                   </div>
 
                   <div>
-                  <IoMdLock className="absolute size-6 fill-[#0148B7] m-3 " />
+                    <IoMdLock className="absolute size-6 fill-[#0148B7] m-3 " />
 
-                  <input
-                    onChange={registerDataChange}
-                    name="password"
-                    required
-                    value={password}
-                    id="password"
-                    type="Password"
-                    placeholder="*********"
-                    className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
-                  />
-                  
-
+                    <input
+                      onChange={registerDataChange}
+                      name="password"
+                      required
+                      value={password}
+                      id="password"
+                      type="Password"
+                      placeholder="*********"
+                      className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
+                    />
                   </div>
                 </div>
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
                   <div className="self-stretch dark:text-white text-black text-base font-medium  tracking-wide">
                     Name
                   </div>
-                  
+
                   <div>
-                  <FaCircleUser className="size-5 m-4 absolute fill-[#0148B7]"/>
+                    <FaCircleUser className="size-5 m-4 absolute fill-[#0148B7]" />
 
-
-                  <input
-                    onChange={registerDataChange}
-                    value={name}
-                    required
-                    name="name"
-                    id="name"
-                    type="text"
-                    placeholder="Enter your name"
-                    className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
-                  />
+                    <input
+                      onChange={registerDataChange}
+                      value={name}
+                      required
+                      name="name"
+                      id="name"
+                      type="text"
+                      placeholder="Enter your name"
+                      className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
+                    />
                   </div>
                 </div>
                 <div className="self-stretch justify-start items-center gap-[15px] inline-flex">
@@ -261,17 +240,21 @@ h-[100%] "
                       Upload IdCard
                     </div>
                     <label className="File  pt-3 text-[#267AFE] pr-3 bg-[#0020511a] rounded-[15px] w-[374px] h-[55px]">
-                      <span className="text-[#B3B3B3] ml-5 text-left">Choose a file to upload</span>
-                    <input
-                      onChange={registerDataChange}
-                      type="file"
-                      accept="image/*"
-                      name="avatar"
-                      id="photo"
-                      placeholder="Upload your photo"
-                      className={`pl-[20px] w-[374px] bg-[#0020511a]  Bg  h-[92px] rounded-[15px] ${styles.avatar}`}
-                    />
-                    <span className=" text-right absolute right-6">Browse File</span>
+                      <span className="text-[#B3B3B3] ml-5 text-left">
+                        Choose a file to upload
+                      </span>
+                      <input
+                        onChange={registerDataChange}
+                        type="file"
+                        accept="image/*"
+                        name="avatar"
+                        id="photo"
+                        placeholder="Upload your photo"
+                        className={`pl-[20px] w-[374px] bg-[#0020511a]  Bg  h-[92px] rounded-[15px] ${styles.avatar}`}
+                      />
+                      <span className=" text-right absolute right-6">
+                        Browse File
+                      </span>
                     </label>
                   </div>
                 </div>
@@ -294,7 +277,7 @@ h-[100%] "
                   <div className="self-stretch dark:text-white text-black text-base font-medium  tracking-wide">
                     Mobile Number(Parent)
                   </div>
-                  
+
                   <input
                     onChange={registerDataChange}
                     value={parentmobile}

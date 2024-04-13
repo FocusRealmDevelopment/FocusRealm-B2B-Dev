@@ -2,16 +2,12 @@
   padding-top: 10px;
 }
 
-
-input[type="file"]{
-  display:none;
+input[type="file"] {
+  display: none;
 }
 
-.File{
-  width:374px;
-  height:55px;
-  background-color:"yellow";
-
-
-
+.File {
+  width: 374px;
+  height: 55px;
+  background-color: "yellow";
 }

@@ -1,9 +1,9 @@
- import React from 'react';
- import LogInd  from "../Registration/LoginPage/LogInd";
+import React from "react";
+import LogInd from "../Registration/LoginPage/LogInd";
 const Login = () => {
   return (
     <div>
-      <LogInd/>
+      <LogInd />
     </div>
   );
 };
