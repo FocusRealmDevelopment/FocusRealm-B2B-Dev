@@ -20,18 +20,20 @@ export default function LogInd(){
         <div className=' C w-[85%] shadow-[#0148B7]  drop-shadow     rounded-[30px]  h-[75%]  absolute  border-[#0148B7] border-2'>
            
     
-           <img src={img1} className='w-[90px] h-[90px] top-[10px] absolute left-[10px]'></img>
+           <img src={img1} className='w-[5vw] h-[90px] top-[10px] absolute left-[10px]'></img>
            
            <img src={img2} className='w-[50px] absolute h-[140px] left-[110px] top-0'></img>
     
-           <img src={img3} className='w-[18vw] self-stretch h-[18vw] absolute left-[150px] top-[8vw]'></img>
-          <div className='absolute top-[28vw] left-[4%]'>
-           <div className='font-semibold text-[2.8vw] top-[-3vw] relative text-white'>
+           <img src={img3} className='w-[17vw] 
+               h-[19vw] absolute top-[10%]  left-[150px]
+         '></img>
+          <div className='absolute top-[60%] left-[4%]'>
+           <div className='font-semibold text-[2.8vw] relative  text-white'>
            Welcome to the Focus Realm
            </div>
-           <div className='text-[1.4vw] L  text-white relative top-[-4vw]'>Step into Focus Realm,Where Distractions Fade and </div>
+           <div className='text-[1.4vw] L  text-white relative '>Step into Focus Realm,Where Distractions Fade and </div>
            <div className='flex justify-center'>
-           <div className='absolute text-[1.5vw] text-white text-center top-[2vw]'>Learning thrives!!</div>
+           <div className='absolute text-[1.5vw] text-white text-center '>Learning thrives!!</div>
            </div>
            </div>
 
