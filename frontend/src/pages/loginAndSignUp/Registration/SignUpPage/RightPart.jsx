@@ -86,7 +86,7 @@ export default function Rpart() {
 
   return (
     <div
-      className="absolute left-[50%] rounded-r-[40px] top-0 bg-[#FFFFFF] dark:bg-[#303640] w-[44.3vw] 
+      className="absolute left-[50%] rounded-r-[40px] top-0 bg-[#FFFFFF] dark:bg-[#303640] w-[100%] 
 h-[100%] "
     >
       <img
