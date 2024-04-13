@@ -146,7 +146,6 @@
   }
   .searchBarContainer > button,
   .darkSearchBarContainer > button {
-    /* font-size: small; */
     width: 15%;
   }
   .searchBarContainer > button > svg,
