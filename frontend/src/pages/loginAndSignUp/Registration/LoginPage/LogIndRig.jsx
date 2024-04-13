@@ -162,11 +162,11 @@ const LoInRi = ({ history }) => {
             <img src={logo} className='absolute w-[250px] top-[4%] h-[120px]'></img>
           </div>
           <form onSubmit={LoginSubmit}>
-            <div className="top-[25%] absolute right-[72%] text-black text-base font-semibold text-[1.1vw] tracking-wide  dark:text-white">Email</div>
+            <div className="top-[25%] absolute left-[23%] text-black text-base font-semibold text-[1.1vw] tracking-wide  dark:text-white">Email</div>
             <div className='flex justify-center'>
               <input type='email' onChange={(e) => setLoginEmail(e.target.value)} required value={loginEmail} placeholder='Enter your Email Address' className='w-[57%] h-[8%] absolute top-[29.5%] rounded-[15px] pl-[50px] Bg bg-[#0020511a]' />
             </div>
-            <div className="top-[40%] absolute right-[68%] text-black text-[1.1vw] text-base font-semibold  tracking-wide dark:text-white">Password</div>
+            <div className="top-[40%] absolute left-[23%] text-black text-[1.1vw] text-base font-semibold  tracking-wide dark:text-white">Password</div>
             <div className='flex justify-center'>
               <input type='password' value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} required placeholder='********' className='w-[57%] h-[8%] absolute top-[44.5%] Bg rounded-[15px] pl-[50px] bg-[#0020511a]' />
             </div>
@@ -182,7 +182,7 @@ const LoInRi = ({ history }) => {
                 <input type='submit' value="Login" className='B absolute top-[64%] bg-[#0148B7] w-[50%]  dark:text-white h-[8%] rounded-[15px] ' />
               </div>
             {/* </Link> */}
-            <div className="w-[280px] absolute top-[75%] left-[23.5%]  h-[23px] px-1.5 bg-white bg-opacity-0 justify-center items-center gap-0.5 inline-flex">
+            <div className="w-[20vw] absolute top-[75%] left-[26.5%]  h-[23px] px-1.5 bg-white bg-opacity-0 justify-center items-center gap-0.5 inline-flex">
               <div className="w-[129px] h-[0px] border border-neutral-400"></div>
               <div className="w-5 h-[23px] text-center text-neutral-400 text-[13px] font-medium font-['Poppins']">or</div>
               <div className="w-[129px] h-[0px] border border-neutral-400"></div>
@@ -193,7 +193,7 @@ const LoInRi = ({ history }) => {
               </button>
             </div>
           </form>
-          <div className=' w-full text-[15px]   '>
+          <div className=' w-full text-[1.2vw]   '>
             <div className=' dark:text-white absolute top-[90%] left-[26%]'>Dont have an account? Create an account</div>
             <input type='checkbox' className='top-[91%] absolute left-[23%]' />
           </div>

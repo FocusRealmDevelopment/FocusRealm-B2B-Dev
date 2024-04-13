@@ -5,12 +5,12 @@ import App from "./App";
 
 export default function FiSignUp() {
   return (
-    <div className="A w-screen  h-screen">
+    <div className="A w-screen max-w-full scroll-auto  h-screen">
       <img src={circle} className="absolute w-[250px] h-[240px] right-0"></img>
 
       <img
         src={circle2}
-        className="w-[350px] h-[320px] absolute bottom-[-150px] right-0"
+        className="w-[350px] bg-fixed h-[320px] absolute bottom-[-150px] right-0"
       ></img>
 
       <div className="w-[100%] h-[193%]  flex justify-center items-center">

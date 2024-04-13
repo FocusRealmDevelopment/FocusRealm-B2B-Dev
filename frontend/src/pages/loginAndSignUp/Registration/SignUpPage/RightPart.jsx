@@ -86,12 +86,12 @@ export default function Rpart() {
 
   return (
     <div
-      className="absolute left-[50%] rounded-r-[40px] top-0 bg-[#FFFFFF] dark:bg-[#303640] w-[100%] 
+      className="absolute left-[50%] rounded-r-[40px] top-0 bg-[#FFFFFF] dark:bg-[#303640] w-[50%] 
 h-[100%] "
     >
       <img
         src={logo}
-        className="w-[20vw] absolute left-[30%] top-[4.5%] h-[10vw]"
+        className="w-[20vw] absolute left-[30%] top-[2vw] h-[10vw]"
       ></img>
 
       <div className="flex justify-center">
@@ -272,13 +272,14 @@ h-[100%] "
                   value="SignUp"
                   id="signup"
                   type="submit"
-                  className="self-stretch   relative w-[320px] tracking-wide bg-[#0148B7] text-white font-semibold  text-center shadow-md shadow-[#0148B7] h-[45px] rounded-2xl"
+                  className="self-stretch   relative w-[320px] tracking-wide bg-[#0148B7] text-white 
+                  left-[1.5vw] font-semibold  text-center shadow-md shadow-[#0148B7] h-[45px] rounded-2xl"
                 />
               </div>
 
               <div className="w-[374px] h-[92px]   bg-white bg-opacity-0 flex-col justify-start items-start flex">
                 <div className=" w-full text-[11px]   ">
-                  <div className=" left-[3vw] absolute  dark:text-white ">
+                  <div className=" left-[4vw] absolute  dark:text-white ">
                     I agree to the{" "}
                     <a className="text-[#0148B7]" href="#">
                       Terms and condition
@@ -289,7 +290,7 @@ h-[100%] "
                     </a>
                   </div>
 
-                  <input type="checkbox" className="absolute left-[2vw] " />
+                  <input type="checkbox" className="absolute left-[3vw] " />
                 </div>
               </div>
             </div>
