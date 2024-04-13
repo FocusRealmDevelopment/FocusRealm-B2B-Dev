@@ -28,17 +28,7 @@ const IconContainer = ({ icon: Icon, iconName, path }) => {
             {/* <HomeIcon /> */}
             <Icon />
           </span>
-          <span
-            // style={{
-            //   color:
-            //     themeMode === "light"
-            //       ? "rgb(99, 119, 153)"
-            //       : "rgb(163, 184, 217)",
-            // }}
-            className={styles.iconNameDiv}
-          >
-            {iconName}
-          </span>
+          <span className={styles.iconNameDiv}>{iconName}</span>
         </NavLink>
       </div>
     );
@@ -47,7 +37,7 @@ const IconContainer = ({ icon: Icon, iconName, path }) => {
       <div className={styles.body}>
         <span
           style={{}}
-          className={`${styles.iconDiv} ${
+          className={`${styles.iconDiv} ${styles.logoutIconDiv} ${
             themeMode === "light" ? "" : styles.darkIconDiv
           }`}
         >

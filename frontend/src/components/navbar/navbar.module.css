@@ -27,7 +27,7 @@
   border-right: 1px solid lightgray;
 }
 .searchBarContainer > input {
-  width: 90%;
+  width: 85%;
   padding: 10px 8px 10px 16px;
   border: none;
   outline: none;
@@ -36,7 +36,7 @@
 .darkSearchBarContainer > input {
   background-color: rgb(44, 51, 64);
   color: rgb(163, 184, 217);
-  width: 90%;
+  width: 85%;
   padding: 10px 8px 10px 16px;
   border: none;
   outline: none;
@@ -49,6 +49,7 @@
   border: none;
   background-color: rgb(79, 129, 209);
   border-radius: 0 8px 8px 0;
+  width: 10%;
 }
 .darkSearchBarContainer > button {
   background-color: rgb(1, 72, 183);
@@ -57,6 +58,7 @@
   justify-content: center;
   border: none;
   border-radius: 0 8px 8px 0;
+  width: 10%;
 }
 .searchBarContainer > button > svg,
 .darkSearchBarContainer > button > svg {
@@ -124,3 +126,55 @@
 }
 
 /* end of profileInfoContainer */
+
+/* start of media queries for tab screen */
+
+@media screen and (max-width: 800px) {
+  .body,
+  .darkBody {
+    padding: 12px;
+    /* justify-content: space-evenly; */
+  }
+  .searchBarContainer,
+  .darkSearchBarContainer {
+    width: 40%;
+  }
+  .searchBarContainer > input,
+  .darkSearchBarContainer > input {
+    font-size: small;
+    width: 80%;
+  }
+  .searchBarContainer > button,
+  .darkSearchBarContainer > button {
+    /* font-size: small; */
+    width: 15%;
+  }
+  .searchBarContainer > button > svg,
+  .darkSearchBarContainer > button > svg {
+    width: 18px;
+    aspect-ratio: 1/1;
+  }
+  .nameInfoContainer {
+    font-size: 12px;
+  }
+  .profileInfoContainer,
+  .darkProfileInfoContainer,
+  .navIcons {
+    width: 30%;
+  }
+  .profileInfoContainer,
+  .darkProfileInfoContainer {
+    gap: 0px;
+    justify-content: center;
+  }
+  .profilePicContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .profileInfoContainer img,
+  .darkProfileInfoContainer img {
+    width: 70%;
+  }
+}
+
+/* end of media queries for tab screen */

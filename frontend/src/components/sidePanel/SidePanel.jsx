@@ -106,7 +106,9 @@ const SidePanel = () => {
         />
         <IconContainer icon={HelpIcon} iconName={"Help"} path={"/help"} />
         <IconContainer icon={LogoutIcon} iconName={"Logout"} />
-        <Switch />
+        <div className={`pl-20 ${styles.tabScreen}`}>
+          <Switch />
+        </div>
       </div>
     </div>
   );

@@ -53,7 +53,8 @@
   padding: 16px 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
 }
 .studentContainer > span {
   font-size: 22px;
@@ -72,3 +73,46 @@
   padding: 40px 0 0 2px;
 }
 /* end of navIconsContainer */
+
+/* start of media queries for tab */
+@media screen and (max-width: 800px) {
+  .logoContainer {
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+  }
+  .logoName {
+    font-size: 16px;
+  }
+  .logoDiv {
+    width: 50px;
+    aspect-ratio: 1/1;
+  }
+  /* .studentInfoContainer {
+    height: 270px;
+  } */
+  .schoolLogoContainer {
+    /* height: 40% !important; */
+    padding: 12px 0;
+  }
+  .schoolLogoContainer > img {
+    width: 40%;
+  }
+  .studentContainer {
+    gap: 10px;
+  }
+  .studentContainer > img {
+    width: 20%;
+  }
+  .studentContainer > span {
+    font-size: 14px;
+  }
+  .navIconsContainer {
+    padding: 20px 0 0 2px;
+    overflow-y: scroll;
+  }
+  .tabScreen {
+    padding-left: 40px !important;
+  }
+}
+/* end of media queries for tab */

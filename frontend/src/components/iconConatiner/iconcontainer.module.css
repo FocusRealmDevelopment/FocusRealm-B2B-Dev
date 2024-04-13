@@ -53,7 +53,20 @@
   color: rgb(163, 184, 217);
 }
 
+.logoutIconDiv {
+  padding-left: 80px;
+}
+
 .active > .iconDiv > svg,
 .active > .iconNameDiv {
   color: rgb(1, 72, 183);
+}
+
+@media screen and (max-width: 800px) {
+  .iconDiv {
+    padding-left: 20px;
+  }
+  .logoutIconDiv {
+    padding-left: 40px;
+  }
 }
