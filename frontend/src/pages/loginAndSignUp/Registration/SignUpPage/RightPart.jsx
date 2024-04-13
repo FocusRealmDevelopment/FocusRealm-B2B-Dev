@@ -4,6 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import styles from "./rightpart.module.css";
 import { useNavigate } from "react-router-dom";
 import { clearErrors,  register } from "../../../../actions/userAction";
+import { MdEmail } from "react-icons/md";
+import { IoMdLock } from "react-icons/io";
+import { FaCircleUser } from "react-icons/fa6";
+
+
+
 
 export default function Rpart() {
   const dispatch = useDispatch();
@@ -86,12 +92,12 @@ export default function Rpart() {
 
   return (
     <div
-      className="absolute left-[50%] rounded-r-[40px] top-0 bg-[#FFFFFF] dark:bg-[#303640] w-[100%] 
+      className="absolute left-[50%] rounded-r-[40px] top-0 bg-[#FFFFFF] dark:bg-[#303640] w-[50%] 
 h-[100%] "
     >
       <img
         src={logo}
-        className="w-[20vw] absolute left-[30%] top-[4.5%] h-[10vw]"
+        className="w-[20vw] absolute left-[30%] top-[2vw] h-[10vw]"
       ></img>
 
       <div className="flex justify-center">
@@ -103,12 +109,28 @@ h-[100%] "
           >
             <div className="w-[390px]  h-[896px] flex-col justify-center items-center gap-[15px] absolute left-[10.5vw] top-[15vw] inline-flex">
               <div className="flex-col justify-center items-start gap-[15px] flex">
+
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
+                  
                   <div className="self-stretch text-black dark:text-white text-base font-medium  tracking-wide">
                     Email
                   </div>
 
-                  <input
+
+                  <div>
+
+
+
+                  <MdEmail className="fill-[#0148B7]
+                  size-5 m-4 absolute mt-5" />
+
+                  
+
+                    
+                  
+
+
+                  <input 
                     onChange={registerDataChange}
                     value={email}
                     required
@@ -117,13 +139,19 @@ h-[100%] "
                     autoComplete="off"
                     type="email"
                     placeholder="Enter your Email Address"
-                    className="pl-[20px] w-[374px] Bg bg-[#0020511a] h-[92px] rounded-[15px]"
+                    className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]" 
                   />
+                  
+                  </div>
+                  
                 </div>
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
                   <div className="self-stretch dark:text-white text-black text-base font-medium  tracking-wide">
                     Password
                   </div>
+
+                  <div>
+                  <IoMdLock className="absolute size-6 fill-[#0148B7] m-3 " />
 
                   <input
                     onChange={registerDataChange}
@@ -133,13 +161,20 @@ h-[100%] "
                     id="password"
                     type="Password"
                     placeholder="*********"
-                    className="pl-[20px] w-[374px] Bg bg-[#0020511a] h-[92px] rounded-[15px]"
+                    className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
                   />
+                  
+
+                  </div>
                 </div>
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
                   <div className="self-stretch dark:text-white text-black text-base font-medium  tracking-wide">
                     Name
                   </div>
+                  
+                  <div>
+                  <FaCircleUser className="size-5 m-4 absolute fill-[#0148B7]"/>
+
 
                   <input
                     onChange={registerDataChange}
@@ -149,8 +184,9 @@ h-[100%] "
                     id="name"
                     type="text"
                     placeholder="Enter your name"
-                    className="pl-[20px] w-[374px] Bg bg-[#0020511a] h-[92px] rounded-[15px]"
+                    className="pl-[50px] w-[374px] Bg bg-[#0020511a] h-[55px] rounded-[15px]"
                   />
+                  </div>
                 </div>
                 <div className="self-stretch justify-start items-center gap-[15px] inline-flex">
                   <div className="h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start inline-flex">
@@ -222,8 +258,10 @@ h-[100%] "
                 <div className="self-stretch justify-start items-center gap-[15px] inline-flex">
                   <div className="grow shrink basis-0 h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start inline-flex">
                     <div className="text-black dark:text-white text-base font-medium  tracking-wide">
-                      Upload Photo
+                      Upload IdCard
                     </div>
+                    <label className="File  pt-3 text-[#267AFE] pr-3 bg-[#0020511a] rounded-[15px] w-[374px] h-[55px]">
+                      <span className="text-[#B3B3B3] ml-5 text-left">Choose a file to upload</span>
                     <input
                       onChange={registerDataChange}
                       type="file"
@@ -233,6 +271,8 @@ h-[100%] "
                       placeholder="Upload your photo"
                       className={`pl-[20px] w-[374px] bg-[#0020511a]  Bg  h-[92px] rounded-[15px] ${styles.avatar}`}
                     />
+                    <span className=" text-right absolute right-6">Browse File</span>
+                    </label>
                   </div>
                 </div>
                 <div className="w-[374px] h-[92px] px-2 py-[7px] bg-white bg-opacity-0 flex-col justify-start items-start flex">
@@ -254,6 +294,7 @@ h-[100%] "
                   <div className="self-stretch dark:text-white text-black text-base font-medium  tracking-wide">
                     Mobile Number(Parent)
                   </div>
+                  
                   <input
                     onChange={registerDataChange}
                     value={parentmobile}
@@ -272,13 +313,14 @@ h-[100%] "
                   value="SignUp"
                   id="signup"
                   type="submit"
-                  className="self-stretch   relative w-[320px] tracking-wide bg-[#0148B7] text-white font-semibold  text-center shadow-md shadow-[#0148B7] h-[45px] rounded-2xl"
+                  className="self-stretch   relative w-[320px] tracking-wide bg-[#0148B7] text-white 
+                  left-[1.5vw] font-semibold  text-center shadow-md shadow-[#0148B7] h-[45px]  rounded-2xl"
                 />
               </div>
 
               <div className="w-[374px] h-[92px]   bg-white bg-opacity-0 flex-col justify-start items-start flex">
                 <div className=" w-full text-[11px]   ">
-                  <div className=" left-[3vw] absolute  dark:text-white ">
+                  <div className=" left-[4vw] absolute  dark:text-white ">
                     I agree to the{" "}
                     <a className="text-[#0148B7]" href="#">
                       Terms and condition
@@ -289,7 +331,7 @@ h-[100%] "
                     </a>
                   </div>
 
-                  <input type="checkbox" className="absolute left-[2vw] " />
+                  <input type="checkbox" className="absolute left-[3vw] " />
                 </div>
               </div>
             </div>
