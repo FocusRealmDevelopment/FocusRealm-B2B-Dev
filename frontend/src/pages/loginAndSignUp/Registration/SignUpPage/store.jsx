@@ -1,7 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import { thunk } from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
-
+import { configureStore } from "@reduxjs/toolkit";
 import {
   allUsersReducer,
   forgotPasswordReducer,
@@ -9,21 +6,15 @@ import {
   userReducer,
 } from "../SignUpPage/userReducer";
 
-const reducer = combineReducers({
+const reducer = {
   user: userReducer,
-
   forgotPassword: forgotPasswordReducer,
-
   allUsers: allUsersReducer,
   userDetails: userDetailsReducer,
-});
+};
 
-const middleware = [thunk];
-
-const store = createStore(
+const store = configureStore({
   reducer,
-
-  composeWithDevTools(applyMiddleware(...middleware))
-);
+});
 
 export default store;
