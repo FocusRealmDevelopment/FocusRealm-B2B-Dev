@@ -51,22 +51,22 @@ const CalanderDays = ({ day, changeCurrentDay }) => {
                                 {/* { index > 7 && index % 2 === 0 ? <p className='right-edge'>Republic Day</p> : null} */}
                             </div>
                             <div className='flex flex-col px-2 text-[11px] w-full'>
-                                <div className='flex bg-[#DAF2E2] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#5DF590] my-1'>
+                                {/* <div className='flex bg-[#DAF2E2] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#5DF590] my-1'>
                                     <span className='h-[8px] w-[8px] rounded-[50%] bg-[#5DF590]'></span>
                                     <span className='pl-2'>Event</span>
-                                </div>
-                                <div className='flex bg-[#FFE5E5] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#FF3434] my-1'>
+                                </div> */}
+                                {/* <div className='flex bg-[#FFE5E5] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#FF3434] my-1'>
                                     <span className='h-[8px] w-[8px] rounded-[50%] bg-[#FF3434]'></span>
                                     <span className='pl-2'>Assignment</span>
-                                </div>
-                                <div className='flex bg-[#DAF2E2] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#5DF590] my-1'>
+                                </div> */}
+                                {/* <div className='flex bg-[#DAF2E2] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#5DF590] my-1'>
                                     <span className='h-[8px] w-[8px] rounded-[50%] bg-[#5DF590]'></span>
                                     <span className='pl-2'>Event</span>
-                                </div>
-                                <div className='flex bg-[#FFE5E5] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#FF3434] my-1'>
+                                </div> */}
+                                {/* <div className='flex bg-[#FFE5E5] items-center w-full py-[0.2px] px-3 rounded-l-[65px] border border-[#FF3434] my-1'>
                                     <span className='h-[8px] w-[8px] rounded-[50%] bg-[#FF3434]'></span>
                                     <span className='pl-2'>Assignment</span>
-                                </div>
+                                </div> */}
                             </div>
                         </button>
                     ))}

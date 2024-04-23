@@ -20,8 +20,8 @@ const IconContainer = ({ icon: Icon, iconName, path }) => {
                 ? `${styles.active} ${styles.light}`
                 : `${styles.active} ${styles.dark}`
               : themeMode === "light"
-              ? `${styles.inActive} ${styles.light}`
-              : `${styles.inActive} ${styles.dark}`
+                ? `${styles.inActive} ${styles.light}`
+                : `${styles.inActive} ${styles.dark}`
           }
         >
           <span className={styles.iconDiv}>
@@ -37,7 +37,7 @@ const IconContainer = ({ icon: Icon, iconName, path }) => {
       <div className={styles.body}>
         <span
           style={{}}
-          className={`${styles.iconDiv} ${styles.logoutIconDiv} ${
+          className={`${styles.iconDiv} ${
             themeMode === "light" ? "" : styles.darkIconDiv
           }`}
         >

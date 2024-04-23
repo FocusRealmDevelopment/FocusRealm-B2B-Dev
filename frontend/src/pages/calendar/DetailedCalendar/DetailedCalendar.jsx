@@ -5,8 +5,17 @@ import MonthlyCalendar from './MonthlyCalendar';
 import WeekwiseCalendar from './WeekwiseCalendar2';
 import DaywiseCalendar from './DaywiseCalendar';
 import { useSelector } from "react-redux";
+import { FaCheck } from "react-icons/fa";
 
 const StaticShowCase = () => {
+    const [checkList, setCheckList] = useState(
+        {
+            event: false,
+            assignment: false,
+            focusPrd: false,
+            test: false
+        }
+    );
     // const themeMode = useSelector((state) => state.theme.themeMode);
     return (
         <div className='py-6'>
@@ -30,22 +39,30 @@ const StaticShowCase = () => {
             </div>
             <div>
                 <h1 className='text-[#232D40] font-semibold text-[18px] my-3'>Show only:</h1>
-                <div className='flex items-center py-2 px-3 my-1'>
-                    <span className='h-[16px] w-[16px] bg-[#DAF2E2] border border-[#5DF590]'></span>
+                <button className='flex items-center py-2 px-3 my-1' onClick={() => setCheckList({ ...checkList, event: !checkList.event })}>
+                    <span className='h-[16px] w-[16px] bg-[#DAF2E2] border border-[#5DF590]'>
+                        {checkList.event && <FaCheck className='text-[#00ff55] p-[2px]' />}
+                    </span>
                     <span className='pl-2'>Event</span>
-                </div>
-                <div className='flex items-center py-2 px-3 my-1'>
-                    <span className='h-[16px] w-[16px] bg-[#FFE5E5] border border-[#FF3434]'></span>
+                </button>
+                <button className='flex items-center py-2 px-3 my-1' onClick={() => setCheckList({ ...checkList, assignment: !checkList.assignment })}>
+                    <span className='h-[16px] w-[16px] bg-[#FFE5E5] border border-[#FF3434]'>
+                        {checkList.assignment && <FaCheck className='text-[#ff0000] p-[2px]' />}
+                    </span>
                     <span className='pl-2'>Assignment</span>
-                </div>
-                <div className='flex items-center py-2 px-3 my-1'>
-                    <span className='h-[16px] w-[16px] bg-[#F2DAF2] border border-[#F232F5]'></span>
+                </button>
+                <button className='flex items-center py-2 px-3 my-1' onClick={() => setCheckList({ ...checkList, focusPrd: !checkList.focusPrd })}>
+                    <span className='h-[16px] w-[16px] bg-[#F2DAF2] border border-[#F232F5]'>
+                        {checkList.focusPrd && <FaCheck className='text-[#F232F5] p-[2px]' />}
+                    </span>
                     <span className='pl-2'>Focus Period</span>
-                </div>
-                <div className='flex items-center py-2 px-3 my-1'>
-                    <span className='h-[16px] w-[16px] bg-[#EDEDD5] border border-[#F5CC00]'></span>
+                </button>
+                <button className='flex items-center py-2 px-3 my-1' onClick={() => setCheckList({ ...checkList, test: !checkList.test })}>
+                    <span className='h-[16px] w-[16px] bg-[#EDEDD5] border border-[#F5CC00]'>
+                        {checkList.test && <FaCheck className='text-[#F5CC00] p-[2px]' />}
+                    </span>
                     <span className='pl-2'>Test</span>
-                </div>
+                </button>
             </div>
         </div>
     );

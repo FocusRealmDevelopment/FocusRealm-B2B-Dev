@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App2 from "./App2.jsx";
 import "./index.css";
 import { Provider } from "react-redux";
-import store  from "./store/store.js";
+import store from "./store/store.js";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   Home,
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <App />,
+    element: <App2 />,
     children: [
       {
         path: "",

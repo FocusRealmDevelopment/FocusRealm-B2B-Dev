@@ -14,23 +14,19 @@ export default class Calendar extends Component {
             currentDay: new Date()
         };
     }
-
     changeCurrentDay = (day) => {
         this.setState({ currentDay: new Date(day.year, day.month, day.number) });
     }
-
     goToPreviousMonth = () => {
         const { currentDay } = this.state;
         const previousMonth = new Date(currentDay.getFullYear(), currentDay.getMonth() - 1, 1);
         this.setState({ currentDay: previousMonth });
     }
-
     goToNextMonth = () => {
         const { currentDay } = this.state;
         const nextMonth = new Date(currentDay.getFullYear(), currentDay.getMonth() + 1, 1);
         this.setState({ currentDay: nextMonth });
     }
-
     render() {
         return (
             <div className="calendar">
