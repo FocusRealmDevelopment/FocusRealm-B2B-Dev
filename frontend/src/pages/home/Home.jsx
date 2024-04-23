@@ -6,6 +6,7 @@ import Phy from '../../assets/images/physics.png'
 import Sem from '../../assets/images/seminar.png'
 import Bk from '../../assets/images/book_fair.png'
 import Book from '../../assets/images/book.png'
+import OrdinaryCalendar from '../calendar/DetailedCalendar/OrdinaryCalendar'
 const Home = () => {
   return (
     <div className="flex w-full">
@@ -169,6 +170,7 @@ const Home = () => {
           <h1 className='font-[600] text-[15px] leading-[22.5px] text-[#222222] my-[5px]'>Calendar</h1>
           <div className='flex h-full w-full justify-center items-center'>
             <p className='font-[400] text-[12px] leading-[18px] text-[#666666] my-[5px]'>Calendar widget here</p>
+            {/* <OrdinaryCalendar currentDate={new Date()} /> */}
           </div>
         </div>
         <div className='flex flex-col bg-[#FFFFFF] rounded-3xl mx-[9px] w-full px-[12px] py-[15px] my-[20px]'>

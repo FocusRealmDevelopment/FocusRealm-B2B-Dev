@@ -4,11 +4,11 @@ import { Outlet } from "react-router-dom";
 
 const App2 = () => {
     return (
-        <div className="h-screen w-full bg-[#F6F6F6]">
-        <Navbar />
-            <div className="flex justify-center w-full" style={{ height: 'calc(100vh - 150px)'}}>
+        <div className="h-screen w-full bg-[#f6f6f6]">
+            <Navbar />
+            <div className="flex justify-center w-full" style={{ height: 'calc(100vh - 150px)' }}>
                 <div className="w-[80%] h-full flex">
-                    <SidePanel/>
+                    <SidePanel />
                     <Outlet />
                 </div>
             </div>
