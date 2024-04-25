@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import '../Calendar.css'
+import "../Calendar.css";
 
 const WeekwiseCalendar = () => {
   const [weeks, setWeeks] = useState([]);
-  const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+  const daysOfWeek = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   const generateWeekdays = (startDate) => {
     const weekdays = [];
     const currentDate = new Date(startDate);
@@ -13,13 +13,13 @@ const WeekwiseCalendar = () => {
         date: new Date(currentDate),
         day: daysOfWeek[currentDate.getDay()],
         month: currentDate.getMonth(),
-        number: String(currentDate.getDate()).padStart(2, '0'),
-        year: currentDate.getFullYear()
+        number: String(currentDate.getDate()).padStart(2, "0"),
+        year: currentDate.getFullYear(),
       });
       currentDate.setDate(currentDate.getDate() + 1);
     }
     setWeeks(weekdays);
-  }
+  };
 
   const prev = () => {
     const newStartDate = new Date(weeks[0].date);
@@ -31,13 +31,13 @@ const WeekwiseCalendar = () => {
       date: newStartDate,
       day: daysOfWeek[newStartDate.getDay()],
       month: newStartDate.getMonth(),
-      number: String(newStartDate.getDate()).padStart(2, '0'),
-      year: newStartDate.getFullYear()
+      number: String(newStartDate.getDate()).padStart(2, "0"),
+      year: newStartDate.getFullYear(),
     });
 
     setWeeks(newWeeks);
     console.log(weeks);
-  }
+  };
 
   const next = () => {
     const newStartDate = new Date(weeks[weeks.length - 1].date);
@@ -49,13 +49,13 @@ const WeekwiseCalendar = () => {
       date: newStartDate,
       day: daysOfWeek[newStartDate.getDay()],
       month: newStartDate.getMonth(),
-      number: String(newStartDate.getDate()).padStart(2, '0'),
-      year: newStartDate.getFullYear()
+      number: String(newStartDate.getDate()).padStart(2, "0"),
+      year: newStartDate.getFullYear(),
     });
 
     setWeeks(newWeeks);
     console.log(weeks);
-  }
+  };
   useEffect(() => {
     generateWeekdays(new Date());
   }, []);
@@ -64,7 +64,7 @@ const WeekwiseCalendar = () => {
       <div className="calendar-week-3">
         {weeks.map((wk, e) => {
           return (
-            <div key={e} className="" style={{ height: '80px' }}>
+            <div key={e} className="" style={{ height: "80px" }}>
               <div className="calendar-day-3">
                 <p className="date-num">{wk.number}</p>
                 <div className="flex justify-center items-center w-full">
@@ -79,7 +79,7 @@ const WeekwiseCalendar = () => {
         <div></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WeekwiseCalendar
+export default WeekwiseCalendar;
