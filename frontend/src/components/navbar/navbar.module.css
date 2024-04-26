@@ -1,0 +1,70 @@
+.body {
+  background-color: #d8dfeb;
+}
+
+/* start of the logoContainer */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.imgContainer {
+  width: 15px;
+  height: 22px;
+}
+.imgContainer > img {
+  width: 100%;
+  height: 100%;
+}
+.logoNameContainer > span:first-child {
+  color: #0148b7;
+}
+.logoNameContainer > span:last-child {
+  color: #4f81d1;
+}
+/* end of the logoContainer */
+
+/* start of searchContainer */
+.searchContainer > input {
+  border: none;
+  padding: 10px 10px 10px 50px;
+  border-radius: 24px;
+  font-size: medium;
+}
+.searchContainer > input:focus {
+  outline: none;
+}
+.searchButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 1.5%;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.searchButtonContainer:hover {
+  background-color: #66666631;
+}
+.searchButtonContainer > svg {
+  height: 20px;
+  width: 20px;
+}
+/* end of searchContainer */
+
+/* start of iconsContainer */
+.iconsContainer {
+  display: flex;
+  gap: 40px;
+}
+.profilePicContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profilePicContainer > img {
+  width: 28px;
+}

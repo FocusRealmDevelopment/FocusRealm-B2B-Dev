@@ -6,15 +6,15 @@ import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
-  // Home,
-  // Calendar,
-  // Help,
-  // Homework,
+  Home,
+  Calendar,
+  Help,
+  Homework,
   Login,
   Signup,
-  // Task,
-  // Test,
-  // Chat,
+  Task,
+  Test,
+  Chat,
 } from "./pages/!mainExports.js";
 
 const router = createBrowserRouter([
@@ -29,36 +29,36 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    // children: [
-    //   {
-    //     path: "",
-    //     element: <Home />,
-    //   },
-    //   {
-    //     path: "task",
-    //     element: <Task />,
-    //   },
-    //   {
-    //     path: "calendar",
-    //     element: <Calendar />,
-    //   },
-    //   {
-    //     path: "test",
-    //     element: <Test />,
-    //   },
-    //   {
-    //     path: "homework",
-    //     element: <Homework />,
-    //   },
-    //   {
-    //     path: "help",
-    //     element: <Help />,
-    //   },
-    //   {
-    //     path: "/chat",
-    //     element: <Chat />,
-    //   },
-    // ],
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "task",
+        element: <Task />,
+      },
+      {
+        path: "calendar",
+        element: <Calendar />,
+      },
+      {
+        path: "test",
+        element: <Test />,
+      },
+      {
+        path: "homework",
+        element: <Homework />,
+      },
+      {
+        path: "help",
+        element: <Help />,
+      },
+      {
+        path: "/chat",
+        element: <Chat />,
+      },
+    ],
   },
 ]);
 

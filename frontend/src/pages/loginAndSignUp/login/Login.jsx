@@ -1,11 +1,6 @@
-import React from "react";
-import LogInd from "../Registration/LoginPage/LogInd";
+// import React from "react";
 const Login = () => {
-  return (
-    <div>
-      <LogInd />
-    </div>
-  );
+  return <div>This is the Login Page.</div>;
 };
 
 export default Login;

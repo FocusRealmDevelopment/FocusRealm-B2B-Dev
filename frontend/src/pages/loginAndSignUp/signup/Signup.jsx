@@ -1,13 +1,7 @@
 // import React from 'react';
 
-import FiSignUp from "../Registration/SignUpPage/FirstSignUp";
-
 const Signup = () => {
-  return (
-    <div>
-      <FiSignUp />
-    </div>
-  );
+  return <div>This is a SignUp Page.</div>;
 };
 
 export default Signup;

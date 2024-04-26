@@ -1,0 +1,8 @@
+.blueDot::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  aspect-ratio: 1/1;
+  background-color: lightskyblue;
+  border-radius: 50%;
+}

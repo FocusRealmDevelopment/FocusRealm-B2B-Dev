@@ -1,0 +1,35 @@
+.navBody {
+  background-color: #d8dfeb;
+}
+/* start of mainBody */
+.mainBody {
+  width: 75%;
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  justify-content: space-between;
+}
+.mainBody > div:first-child,
+.mainBody > div:last-child {
+  width: 20%;
+  /* height: 500px; */
+  /* border: 1px solid black; */
+  position: sticky;
+  top: 5%;
+  align-self: flex-start;
+}
+.mainBody > div:first-child {
+  box-shadow: 0px 7px 15px 0px #0000000d;
+  border: none;
+  height: auto;
+}
+.mainBody > div:last-child {
+  right: 0;
+}
+.mainBody > div:nth-child(2) {
+  width: 60%;
+  /* height: 2000px; */
+  border: 1px solid black;
+}
+/* end of mainBody */
