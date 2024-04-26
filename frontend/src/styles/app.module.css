@@ -1,9 +1,14 @@
+.body {
+  background-color: #f6f6f6;
+  padding-bottom: 60px;
+}
+
 .navBody {
   background-color: #d8dfeb;
 }
 /* start of mainBody */
 .mainBody {
-  width: 75%;
+  width: 85%;
   margin: 40px auto;
   display: flex;
   gap: 20px;
@@ -30,6 +35,6 @@
 .mainBody > div:nth-child(2) {
   width: 60%;
   /* height: 2000px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 /* end of mainBody */

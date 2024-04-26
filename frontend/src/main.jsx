@@ -13,7 +13,7 @@ import {
   Login,
   Signup,
   Task,
-  Test,
+  Forum,
   Chat,
 } from "./pages/!mainExports.js";
 
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <Calendar />,
       },
       {
-        path: "test",
-        element: <Test />,
+        path: "forum",
+        element: <Forum />,
       },
       {
         path: "homework",
