@@ -16,7 +16,9 @@ const Container = ({ heading, children }) => {
           </span>
         </Link>
       </div>
-      <div className="mt-4 grid grid-cols-4 gap-4">{children}</div>
+      <div className="mt-4 grid lg:grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-1">
+        {children}
+      </div>
     </div>
   );
 };
