@@ -21,7 +21,7 @@ const GoingOnWidget = () => {
           Math <span className={`${styles.blueDot}`}></span> 12th Class
         </p>
         <p className="text-blue-700 text-[12px]">Started at 10:30 am</p>
-        <div className="w-11/12 mx-auto text-center py-2 rounded-[24px] bg-blue-700 my-5">
+        <div className="w-11/12 mx-auto text-center py-2 rounded-[24px] bg-blue-700 my-5 text-white">
           Connect
         </div>
       </div>

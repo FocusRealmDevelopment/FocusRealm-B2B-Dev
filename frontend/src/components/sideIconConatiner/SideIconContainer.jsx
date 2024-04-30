@@ -6,7 +6,7 @@ import styles from "./sideiconcontainer.module.css";
 //${isactive ? styles.active : ""}
 
 const SideIconContainer = ({ Icon, iconName, path }) => {
-  console.log(Icon);
+  // console.log(Icon);
 
   if (path) {
     return (

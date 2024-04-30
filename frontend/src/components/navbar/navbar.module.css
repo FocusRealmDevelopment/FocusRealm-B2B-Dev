@@ -65,6 +65,13 @@
   gap: 10px;
   align-items: center;
 }
-.profilePicContainer > img {
+.profilePicContainer img {
   width: 28px;
+}
+.profileArrow {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.profileArrow:hover {
+  transform: translateY(10px);
 }

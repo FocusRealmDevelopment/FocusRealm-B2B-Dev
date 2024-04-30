@@ -1,5 +1,6 @@
 // import React from 'react';
 import styles from "./navbar.module.css";
+import { Link } from "react-router-dom";
 import focusRealmLogo from "../../assets/images/focusRealmLogo.png";
 import profilePic from "../../assets/images/profilePic.png";
 import SearchIcon from "@mui/icons-material/Search";
@@ -9,8 +10,12 @@ import { RiCalendarTodoFill } from "react-icons/ri";
 import { PiBellSimple } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
 import "../../styles/global.css";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [showProfileOptions, setShowProfileOptions] = useState(false);
+  let hideTimeout;
+
   return (
     <div
       className={`bg-inherit w-3/4 mx-auto flex items-center justify-between py-2`}
@@ -44,7 +49,38 @@ const Navbar = () => {
         </div>
         <div className={`${styles.profilePicContainer}`}>
           <img src={profilePic} alt="profile-pic" />
-          <IoIosArrowDown />
+          <div
+            onMouseOver={() => {
+              setShowProfileOptions(true);
+              clearTimeout(hideTimeout);
+            }}
+            onMouseOut={(e) => {
+              if (
+                !e.relatedTarget ||
+                !e.relatedTarget.classList.contains(
+                  styles.profilePicContainer
+                ) ||
+                !e.relatedTarget.classList.contains(styles.profileArrow)
+              ) {
+                hideTimeout = setTimeout(() => {
+                  setShowProfileOptions(false);
+                }, 500);
+              }
+            }}
+            className={`flex items-center justify-center relative ${styles.profileArrow}`}
+          >
+            <IoIosArrowDown />
+            {showProfileOptions && (
+              <div
+                className={`flex flex-col absolute border border-solid border-black -bottom-[250%] -right-[250%]`}
+              >
+                <Link to={"/profile"} className="p-1 text-[14px]">
+                  Profile
+                </Link>
+                {/* ... other profile options ... */}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

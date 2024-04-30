@@ -10,6 +10,7 @@
 
 # production
 
+.env
 
 # misc
 /backend/config/config.env

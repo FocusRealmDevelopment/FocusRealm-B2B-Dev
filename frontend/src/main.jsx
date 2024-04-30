@@ -16,6 +16,8 @@ import {
   Forum,
   Chat,
 } from "./pages/!mainExports.js";
+import MainProfilePage from "./pages/profile/profileChildren/mainProfilePage/MainProfilePage.jsx";
+import Profile from "./pages/profile/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +59,16 @@ const router = createBrowserRouter([
       {
         path: "/chat",
         element: <Chat />,
+      },
+    ],
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
+    children: [
+      {
+        path: "",
+        element: <MainProfilePage />,
       },
     ],
   },
