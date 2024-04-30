@@ -18,7 +18,7 @@ const PerformanceCard = ({
     >
       <div className={`flex items-center gap-3`}>
         {logo && <img className={`w-[20%]`} src={logo} alt="logo-pic" />}
-        <div className={`text-sm text-center`}>
+        <div className={`text-sm text-left`}>
           <h1 className={`text-[#666666] poppins-regular`}>{componentName}</h1>
           <h1 className={`text-[#0148b7] poppins-bold`}>{componentDesc}</h1>
           {children}

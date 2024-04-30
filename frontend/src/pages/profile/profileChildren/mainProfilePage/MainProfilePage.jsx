@@ -145,7 +145,7 @@ const MainProfilePage = () => {
                 128 hours 30 mins
               </h3>
             </div>
-            <div className={`text-[#666666] text-xs text-left poppins-regular`}>
+            <div className={`text-[#666666] text-xs poppins-regular`}>
               View Detailed Analytics
             </div>
           </PerformanceCard>
