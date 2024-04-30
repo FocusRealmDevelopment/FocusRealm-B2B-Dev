@@ -8,8 +8,20 @@ import { fetchProfile } from "../../../../features/fetchProfile/profileSlice";
 import ProfileInfoContainer from "./mainProfileComponents/ProfileInfoContainer/ProfileInfoContainer";
 import PerformanceContainer from "./mainProfileComponents/performanceContainer/PerformanceContainer";
 import PerformanceCard from "../../../../components/performanceCard/PerformanceCard";
-// import ProfileComponents from "../../../../components/profileComponents/ProfileComponents";
-// import profile from "../../../../assets/images/profile.jpeg";
+import gradeImage from "../../../../assets/images/gradeImage.png";
+import pointsImage from "../../../../assets/images/pointsImage.png";
+import attendanceImage from "../../../../assets/images/attendanceImage.png";
+import activeImage from "../../../../assets/images/activeImage.png";
+import eng from "../../../../assets/images/eng.png";
+import chemistry from "../../../../assets/images/chemistry.png";
+import science from "../../../../assets/images/science.png";
+import math from "../../../../assets/images/math.png";
+import physics from "../../../../assets/images/physics.png";
+import hindi from "../../../../assets/images/hindi.png";
+import history from "../../../../assets/images/history.png";
+import it from "../../../../assets/images/it.png";
+import performance from "../../../../assets/images/performance.png";
+import overallTime from "../../../../assets/images/overallTime.png";
 
 const MainProfilePage = () => {
   const dispatch = useDispatch();
@@ -43,9 +55,100 @@ const MainProfilePage = () => {
       <div>
         <PerformanceContainer
           heading={profileData?.name ?? "Patrick's"}
-          gridCols={4}
+          gridCols={"grid-cols-4"}
         >
-          <PerformanceCard />
+          <PerformanceCard
+            logo={gradeImage}
+            componentName={"Grade"}
+            componentDesc={"A1"}
+          />
+          <PerformanceCard
+            logo={pointsImage}
+            componentName={"Points"}
+            componentDesc={"342"}
+          />
+          <PerformanceCard
+            logo={attendanceImage}
+            componentName={"Attendance"}
+            componentDesc={"82%"}
+          />
+          <PerformanceCard
+            logo={activeImage}
+            componentName={"Active Hours"}
+            componentDesc={"164"}
+          />
+        </PerformanceContainer>
+        <PerformanceContainer heading={"Subject Wise"} gridCols={"grid-cols-4"}>
+          <PerformanceCard
+            logo={eng}
+            componentName={"English"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={chemistry}
+            componentName={"Chemistry"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={science}
+            componentName={"Science"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={math}
+            componentName={"Maths"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={physics}
+            componentName={"Physics"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={hindi}
+            componentName={"Hindi"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={history}
+            componentName={"History"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+          <PerformanceCard
+            logo={it}
+            componentName={"IT"}
+            componentDesc={"342"}
+            path={"#"}
+          />
+        </PerformanceContainer>
+        <PerformanceContainer heading={"Overall"} gridCols={"grid-cols-2"}>
+          <PerformanceCard logo={eng} logo2={performance}>
+            <h1 className={`text-[#666666] poppins-regular text-left`}>
+              Overall Performance
+            </h1>
+            <h1 className={`text-[#0148b7] poppins-bold text-left`}>67.1%</h1>
+          </PerformanceCard>
+          <PerformanceCard logo={eng} logo2={overallTime}>
+            <h1 className={`text-[#666666] poppins-regular  text-left`}>
+              Overall Time Spent
+            </h1>
+            <div className={`flex gap-4 text-left`}>
+              <h1 className={`text-[#0148b7] poppins-bold`}>87.15%</h1>
+              <h3 className={`text-[#0148B7] poppins-regular`}>
+                128 hours 30 mins
+              </h3>
+            </div>
+            <div className={`text-[#666666] text-xs text-left poppins-regular`}>
+              View Detailed Analytics
+            </div>
+          </PerformanceCard>
         </PerformanceContainer>
       </div>
     </div>

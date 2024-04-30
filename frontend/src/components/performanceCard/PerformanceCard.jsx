@@ -14,23 +14,25 @@ const PerformanceCard = ({
 }) => {
   return (
     <div
-      className={`${styles.body} p-4 rounded-xl flex items-center justify-between`}
+      className={`${styles.body} p-4 rounded-xl flex items-center justify-between bg-white`}
     >
-      <div className={`flex gap-3`}>
-        {logo && <img src={logo} alt="logo-pic" />}
-        <div>
-          <h1 className={``}>{componentName}</h1>
-          <h1 className={``}>{componentDesc}</h1>
+      <div className={`flex items-center gap-3`}>
+        {logo && <img className={`w-[20%]`} src={logo} alt="logo-pic" />}
+        <div className={`text-sm text-center`}>
+          <h1 className={`text-[#666666] poppins-regular`}>{componentName}</h1>
+          <h1 className={`text-[#0148b7] poppins-bold`}>{componentDesc}</h1>
           {children}
         </div>
       </div>
-      <div>
+      <div className={`flex justify-end`}>
         {path && (
-          <Link to={path}>
+          <Link className={`${styles.advancedPageLink}`} to={path}>
             <MdOutlineInsertChart />
           </Link>
         )}
-        {logo2 && <img src={logo2} alt="second-logo-pic" />}
+        {logo2 && (
+          <img className={`w-[20%]`} src={logo2} alt="second-logo-pic" />
+        )}
       </div>
     </div>
   );
