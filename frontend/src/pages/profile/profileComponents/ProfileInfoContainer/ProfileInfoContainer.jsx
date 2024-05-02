@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // import React from 'react';
-import ProfileComponents from "../../../../../../components/profileComponents/ProfileComponents";
+import ProfileComponents from "../../../../components/profileComponents/ProfileComponents";
 import styles from "./profileinfocontainer.module.css";
 
 const ProfileInfoContainer = ({ profileData }) => {

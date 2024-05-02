@@ -1,12 +1,9 @@
 // import React from 'react';
-import { useEffect } from "react";
 import styles from "./mainprofilepage.module.css";
 import { FaArrowLeft } from "react-icons/fa";
 import "../../../../styles/global.css";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchProfile } from "../../../../features/fetchProfile/profileSlice";
-import ProfileInfoContainer from "./mainProfileComponents/ProfileInfoContainer/ProfileInfoContainer";
-import PerformanceContainer from "./mainProfileComponents/performanceContainer/PerformanceContainer";
+import ProfileInfoContainer from "../../profileComponents/ProfileInfoContainer/ProfileInfoContainer";
+import PerformanceContainer from "../../profileComponents/performanceContainer/PerformanceContainer";
 import PerformanceCard from "../../../../components/performanceCard/PerformanceCard";
 import gradeImage from "../../../../assets/images/gradeImage.png";
 import pointsImage from "../../../../assets/images/pointsImage.png";
@@ -22,6 +19,10 @@ import history from "../../../../assets/images/history.png";
 import it from "../../../../assets/images/it.png";
 import performance from "../../../../assets/images/performance.png";
 import overallTime from "../../../../assets/images/overallTime.png";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchProfile } from "../../../../features/fetchProfile/profileSlice";
+// import { Outlet } from "react-router-dom";
 
 const MainProfilePage = () => {
   const dispatch = useDispatch();
@@ -35,7 +36,7 @@ const MainProfilePage = () => {
     <div className={`${styles.body} p-4`}>
       <div className={`flex items-center gap-3`}>
         <div
-          onClick={() => window.history.back()}
+          onClick={() => window.history.back()} //this is the function to go to the previous page
           className={`${styles.iconContainer} duration-200 cursor-pointer flex items-center justify-center p-2 rounded-[50%] bg-white`}
         >
           <FaArrowLeft />
@@ -54,7 +55,11 @@ const MainProfilePage = () => {
       </div>
       <div>
         <PerformanceContainer
-          heading={profileData?.name ?? "Patrick's"}
+          heading={
+            profileData.name
+              ? `${profileData.name}'s Performance`
+              : "Patrick's Performance"
+          }
           gridCols={"grid-cols-4"}
         >
           <PerformanceCard
@@ -78,7 +83,10 @@ const MainProfilePage = () => {
             componentDesc={"164"}
           />
         </PerformanceContainer>
-        <PerformanceContainer heading={"Subject Wise"} gridCols={"grid-cols-4"}>
+        <PerformanceContainer
+          heading={"Subject Wise Performance"}
+          gridCols={"grid-cols-4"}
+        >
           <PerformanceCard
             logo={eng}
             componentName={"English"}
@@ -128,25 +136,32 @@ const MainProfilePage = () => {
             path={"#"}
           />
         </PerformanceContainer>
-        <PerformanceContainer heading={"Overall"} gridCols={"grid-cols-2"}>
-          <PerformanceCard logo={eng} logo2={performance}>
-            <h1 className={`text-[#666666] poppins-regular text-left`}>
-              Overall Performance
-            </h1>
-            <h1 className={`text-[#0148b7] poppins-bold text-left`}>67.1%</h1>
-          </PerformanceCard>
-          <PerformanceCard logo={eng} logo2={overallTime}>
-            <h1 className={`text-[#666666] poppins-regular  text-left`}>
-              Overall Time Spent
-            </h1>
-            <div className={`flex gap-4 text-left`}>
-              <h1 className={`text-[#0148b7] poppins-bold`}>87.15%</h1>
-              <h3 className={`text-[#0148B7] poppins-regular`}>
-                128 hours 30 mins
-              </h3>
+        <PerformanceContainer
+          heading={"Overall Performance"}
+          gridCols={"grid-cols-2"}
+        >
+          <PerformanceCard completionPercentage={67.1} logo2={performance}>
+            <div className={`w-[30%]`}>
+              <h1 className={`text-[#666666] poppins-regular text-left`}>
+                Overall Performance
+              </h1>
+              <h1 className={`text-[#0148b7] poppins-bold text-left`}>67.1%</h1>
             </div>
-            <div className={`text-[#666666] text-xs poppins-regular`}>
-              View Detailed Analytics
+          </PerformanceCard>
+          <PerformanceCard completionPercentage={87.15} logo2={overallTime}>
+            <div>
+              <h1 className={`text-[#666666] poppins-regular  text-left`}>
+                Overall Time Spent
+              </h1>
+              <div className={`flex gap-4 text-left`}>
+                <h1 className={`text-[#0148b7] poppins-bold`}>87.15%</h1>
+                <h3 className={`text-[#0148B7] poppins-regular`}>
+                  128 hours 30 mins
+                </h3>
+              </div>
+              <div className={`text-[#666666] text-xs poppins-regular`}>
+                View Detailed Analytics
+              </div>
             </div>
           </PerformanceCard>
         </PerformanceContainer>

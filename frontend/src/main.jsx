@@ -15,9 +15,10 @@ import {
   Task,
   Forum,
   Chat,
+  Profile,
+  MainProfilePage,
+  DetailedAnalytics,
 } from "./pages/!mainExports.js";
-import MainProfilePage from "./pages/profile/profileChildren/mainProfilePage/MainProfilePage.jsx";
-import Profile from "./pages/profile/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <MainProfilePage />,
+      },
+      {
+        path: "detailed-analytics",
+        element: <DetailedAnalytics />,
       },
     ],
   },

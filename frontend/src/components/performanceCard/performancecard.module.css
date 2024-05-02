@@ -1,3 +1,9 @@
+/* .body > div:first-child {
+  width: 70%;
+} */
+.compnentContainer > div:last-child {
+  width: auto;
+}
 .advancedPageLink > svg {
   color: blue;
   height: 24px;
