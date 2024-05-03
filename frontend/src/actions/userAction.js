@@ -25,7 +25,7 @@ export const login = (email, password) => async (dispatch) => {
   
       const { data } = await axios.post(
         `http://localhost:4002/api/v1/login`,
-        { email, password },
+        { email, password },{ withCredentials: true },
         config
       );
   
@@ -42,7 +42,7 @@ export const register = (userData) => async (dispatch) => {
   
       const config = { headers: { "Content-Type": "multipart/form-data" } };
   
-      const { data } = await axios.post(`http://localhost:4002/api/v1/register`, userData, config);
+      const { data } = await axios.post(`http://localhost:4002/api/v1/register`, userData, { withCredentials: true },config);
   
       dispatch({ type: REGISTER_USER_SUCCESS, payload: data.user });
     } catch (error) {
@@ -58,9 +58,10 @@ export const loadUser = () => async (dispatch) => {
     try {
       dispatch({ type: LOAD_USER_REQUEST });
   
-      const { data } = await axios.get(`http:localhost:4002/api/v1/me`);
-  
+      const { data } = await axios.get(`http://localhost:4002/api/v1/me`,{ withCredentials: true });
+      
       dispatch({ type: LOAD_USER_SUCCESS, payload: data.user });
+      
     } catch (error) {
       dispatch({ type: LOAD_USER_FAIL, payload: error.response.data.message });
     }

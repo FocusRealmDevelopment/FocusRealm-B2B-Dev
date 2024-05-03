@@ -12,6 +12,7 @@ const http = require('http');
 const fileupload=require("express-fileupload")
 
 
+dotenv.config({path:"backend/config/config.env"})
 
 const server = http.createServer(app);
 const io =(Server)(server);
@@ -25,15 +26,15 @@ app.use(fileupload())
 
 const corsOptions = {
     credentials: true,
+     origin: 'http://localhost:5173',
 };
-
-app.options("*", cors(corsOptions));
+ app.options("*", cors(corsOptions));
 app.use(cors(corsOptions));
 
 const user = require("./routes/userRoute");
 const chatRoutes = require('./routes/chatRoute');
 const messageRoutes = require('./routes/messageRoute');
-
+const teacherRoutes = require('./routes/teacherRoute');
 
 // Notification logic
 io.on('connection', (socket) => {
@@ -48,6 +49,7 @@ io.on('connection', (socket) => {
 });
 
 app.use("/api/v1", user);
+app.use("/api/v1", teacherRoutes);
 app.use('/api/v1', (req, res, next) => {
     req.io = io;
     next();
