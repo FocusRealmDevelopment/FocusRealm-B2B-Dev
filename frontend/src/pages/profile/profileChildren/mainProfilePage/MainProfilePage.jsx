@@ -91,49 +91,49 @@ const MainProfilePage = () => {
             logo={eng}
             componentName={"English"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={chemistry}
             componentName={"Chemistry"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={science}
             componentName={"Science"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={math}
             componentName={"Maths"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={physics}
             componentName={"Physics"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={hindi}
             componentName={"Hindi"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={history}
             componentName={"History"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
           <PerformanceCard
             logo={it}
             componentName={"IT"}
             componentDesc={"342"}
-            path={"#"}
+            path={"/profile/detailed-analytics"}
           />
         </PerformanceContainer>
         <PerformanceContainer

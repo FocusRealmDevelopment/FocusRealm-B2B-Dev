@@ -12,6 +12,8 @@ import attendanceImage from "../../../../assets/images/attendanceImage.png";
 import activeImage from "../../../../assets/images/activeImage.png";
 
 import styles from "./detailedanalytics.module.css";
+import CommonContainer from "../../../../components/commonContainer/CommonContainer";
+import SmallCalendar from "../../../../components/smallCalendar/SmallCalendar";
 
 const DetailedAnalytics = () => {
   const dispatch = useDispatch();
@@ -105,6 +107,11 @@ const DetailedAnalytics = () => {
             componentName={"IT"}
             componentDesc={87.15}
           />
+        </PerformanceContainer>
+        <PerformanceContainer gridCols={"grid-cols-3"}>
+          <CommonContainer>
+            <SmallCalendar />
+          </CommonContainer>
         </PerformanceContainer>
       </div>
     </div>
