@@ -69,7 +69,7 @@ const SidePanel = () => {
           path={"/help"}
         />
       </div>
-      <div className={`flex flex-col gap-[10x] items-center w-full mt-10`}>
+      <div className={`flex flex-col gap-[0x] items-center w-full mt-5`}>
       <button onClick={handleLogout}>
         <IoIosLogOut />
         Logout

@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+.rounded-box {
+    border-radius: 10px; /* Adjust the border-radius to change the roundness */
+    padding: 20px; /* Add padding to create space inside the box */
+    background-color: #ffffff; /* Add a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    height: 155px;/* Add a shadow effect */
+    font-family: 'Poppins', sans-serif;
+  }
+  .back-arrow {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  .teacher{
+    padding-bottom: 20px;
+  }
+  
+  .study-materials {
+    margin-left: 10px; /* Add margin to separate from the arrow icon */
+  }
+  .content {
+    margin-left: 10px;
+  }
+  
+  .h2 {
+    margin-top: 10px; 
+    font-family: 'Poppins', sans-serif;/* Add margin to separate from the h1 */
+  }  
+  .see-more {
+    color: blue;
+  }
+  .bold {
+    font-weight: 400;
+  }
+  .materials {
+    margin-top: 20px; 
+    font-family: 'Poppins', sans-serif;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically *//* Adjust the margin-top to create space between the rounded box and the "Materials" text */
+  }
+  .gray{
+    color: rgb(150, 150, 150);
+  }
+  .bluebox{
+    border-radius: 10px;
+    background-color: #a4dcfa;
+    width: 170px;
+    padding: auto;
+    height: 30px;
+    margin-left: 20px;
+  }
+  .lectures{
+    color: blue;
+    font-size: x-large;
+    padding-top: 50px;
+    font-weight: 600;
+  }
+  .rounded-box-small{
+    border-radius: 10px; /* Adjust the border-radius to change the roundness */
+    padding: 20px; /* Add padding to create space inside the box */
+    background-color: #ffffff; /* Add a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    height: 50px;/* Add a shadow effect */
+    font-family: 'Poppins', sans-serif;
+  }
+  .pdf-container {
+    display: flex;
+    align-items: center;
+  }
+  .sub-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .small-box{
+    margin-top: 10px;
+  }
