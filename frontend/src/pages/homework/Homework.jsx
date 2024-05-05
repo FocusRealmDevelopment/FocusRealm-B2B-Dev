@@ -131,7 +131,83 @@ const Homework = () => {
             <div className="rounded-box-small">
               <div className="pdf-container">
                 <FaFilePdf />
-                <h1>Mathematical Expression Of First Law Enthalpy Of A System </h1>
+                <h1>
+                  Mathematical Expression Of First Law Enthalpy Of A System{" "}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 className="sub-title">Assignments</h1>
+        </div>
+        <div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Assignment on Chemistry 1</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Thermodynamics-All Assignments</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Chemistry In Everyday Life-All Assignments</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Assignement on Chemistry 2</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 className="sub-title">Sub title here</h1>
+        </div>
+        <div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Assignement on Chemistry 3</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Assignement on Chemistry 4</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Assignement on Chemistry 5</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFilePdf />
+                <h1>Assignement on Chemistry 6</h1>
               </div>
             </div>
           </div>
