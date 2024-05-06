@@ -1,6 +1,18 @@
 import React from "react";
 import "./Homework.css";
-import { FaArrowLeft, FaFilePdf } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaFilePdf,
+  FaFolder,
+  FaFileExcel,
+  FaFileImage,
+  FaFileWord,
+  FaLink,
+  FaFolderOpen,
+  FaArrowRight,
+  FaChevronUp,
+  FaSearch
+} from "react-icons/fa";
 
 import { CloseSVG } from "../../assets/images";
 import { Img, Button, Input } from "../../components";
@@ -33,120 +45,141 @@ const Homework = () => {
         <div className="container">
           <div className="materials">
             <h1 className="study-materials bold">Materials</h1>
-            <div className="bluebox">
-              <h3>449 Materials</h3>
+            <div className="rounded-box-small-new-blue">
+              <h3>442 Materials</h3>
             </div>
-            <Input
-              name="Search Bar"
-              placeholder={`Search materials...`}
-              value={searchBarValue}
-              onChange={(e) => setSearchBarValue(e)}
-              prefix={
-                <div className="flex h-[16px] w-[16px] items-center justify-center">
-                  <Img
-                    src="images/img_search.svg"
-                    alt="search"
-                    className="h-[16px] w-[16px] cursor-pointer"
-                  />
+            
+                <div className="search">
+                  <div className="lens">
+                    <FaSearch/>
+                  </div><h3>Search materials</h3>
                 </div>
-              }
-              suffix={
-                searchBarValue?.length > 0 ? (
-                  <CloseSVG
-                    onClick={() => setSearchBarValue("")}
-                    height={16}
-                    width={16}
-                  />
-                ) : null
-              }
-              className="flex h-[44px] w-[41%] items-center justify-center gap-2.5 rounded-[22px] bg-white-A700 pl-[15px] pr-[35px] text-[13px] text-gray-700 md:w-full sm:pr-5"
-            />
+              
           </div>
-          <div>
+          <div className="lec-arrow">
             <h1 className="lectures">Lectures</h1>
+            <div className="up-arrow">
+              <FaChevronUp />
+            </div>
           </div>
         </div>
         <div className="rounded-box-small">
           <div className="pdf-container">
             <FaFilePdf />
-            <h1>Chemistry In Everyday Life</h1>
+            <h1 className="title">Chemistry In Everyday Life</h1>
           </div>
         </div>
-        <div>
+        <div className="lec-arrow">
           <h1 className="sub-title">Sub title here</h1>
+          <div className="up-arrow-1">
+              <FaChevronUp />
+            </div>
         </div>
         <div>
           <div className="rounded-box-small">
             <div className="pdf-container">
-              <FaFilePdf />
-              <h1>Organic Chemistry All Materials</h1>
+              <FaFolder color="blue" />
+              <h1 className="title">Organic Chemistry All Materials</h1>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Thermo Chemistry - Revision 1</h1>
+                <FaFolderOpen color="blue" />
+                <h1 className="title">Thermo Chemistry - Revision 1</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Introduction to Thermo Chemistry - 1</h1>
+                <FaLink />
+                <h1 className="title">Introduction to Thermo Chemistry - 1</h1>
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div className="lec-arrow">
           <h1 className="sub-title">Summarized Modules</h1>
+          <div className="up-arrow-2">
+              <FaChevronUp />
+            </div>
         </div>
         <div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Introduction</h1>
+                <FaFileExcel color="green" />
+                <h1 className="title">Introduction</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Isochoric Process</h1>
+                <FaFileImage />
+                <h1 className="title">Isochoric Process</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Internal Energy</h1>
+                <FaFileWord />
+                <h1 className="title">Internal Energy</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>
+                <FaFileImage />
+                <h1 className="title">
                   Mathematical Expression Of First Law Enthalpy Of A System{" "}
                 </h1>
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div className="lec-arrow">
           <h1 className="sub-title">Assignments</h1>
+          <div className="up-arrow-3">
+              <FaChevronUp />
+            </div>
         </div>
         <div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
                 <FaFilePdf />
-                <h1>Assignment on Chemistry 1</h1>
+                <h1 className="title">Assignment on Chemistry 1</h1>
+                <div className="rounded-box-small-new">
+                  <h2 className="centered-text">3 days left</h2>
+                </div>
+                <div className="rounded-box-small-new-submit">
+                  <h2 className="centered-text">Submit Assignment</h2>
+                  <div className="arrow">
+                    <FaArrowRight />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFolder color="blue" />
+                <h1 className="title">Thermodynamics-All Assignments</h1>
+              </div>
+            </div>
+          </div>
+          <div className="small-box">
+            <div className="rounded-box-small">
+              <div className="pdf-container">
+                <FaFolderOpen color="blue" />
+                <h1 className="title">
+                  Chemistry In Everyday Life-All Assignments
+                </h1>
               </div>
             </div>
           </div>
@@ -154,60 +187,47 @@ const Homework = () => {
             <div className="rounded-box-small">
               <div className="pdf-container">
                 <FaFilePdf />
-                <h1>Thermodynamics-All Assignments</h1>
-              </div>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Chemistry In Everyday Life-All Assignments</h1>
-              </div>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Assignement on Chemistry 2</h1>
+                <h1 className="title">Assignement on Chemistry 2</h1>
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div className="lec-arrow">
           <h1 className="sub-title">Sub title here</h1>
+          <div className="up-arrow-3">
+              <FaChevronUp />
+            </div>
         </div>
         <div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Assignement on Chemistry 3</h1>
+                <FaFileImage />
+                <h1 className="title">Assignement on Chemistry 3</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Assignement on Chemistry 4</h1>
+                <FaFileImage />
+                <h1 className="title">Assignement on Chemistry 4</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Assignement on Chemistry 5</h1>
+                <FaFileImage />
+                <h1 className="title">Assignement on Chemistry 5</h1>
               </div>
             </div>
           </div>
           <div className="small-box">
             <div className="rounded-box-small">
               <div className="pdf-container">
-                <FaFilePdf />
-                <h1>Assignement on Chemistry 6</h1>
+                <FaFileImage />
+                <h1 className="title">Assignement on Chemistry 6</h1>
               </div>
             </div>
           </div>
