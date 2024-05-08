@@ -7,7 +7,7 @@ import { RiTaskFill } from "react-icons/ri";
 import { FaRegCalendar } from "react-icons/fa6";
 import { MdAssignment } from "react-icons/md";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import { IoMdHelpCircle } from "react-icons/io";
+import { IoMdHelpCircle, IoMdLogOut } from "react-icons/io";
 import { IoIosLogOut } from "react-icons/io";
 import axios from "axios";
 const handleLogout = async () => {
@@ -22,11 +22,11 @@ const handleLogout = async () => {
 };
 const SidePanel = () => {
   return (
-    <div className={`${styles.body}`}>
-      <div className={`${styles.pictureContainer}`}>
-        <div className={`${styles.pictureDiv}`}></div>
+    <div className={`${styles.body}`}  style={{ backgroundColor: 'white' }}>
+      <div className={`${styles.pictureContainer}`} style={{ backgroundColor: 'white' }}>
+        <div className={`${styles.pictureDiv}`} ></div>
       </div>
-      <div className={`${styles.studentDetailsContainer} mt-14 text-center`}>
+      <div className={`${styles.studentDetailsContainer} mt-14 text-center`} style={{ backgroundColor: 'white' }}>
         <h1 className={`text-2xl poppins-semibold mb-2`}>Patrick Dash R</h1>
         <div
           className={`w-2/5 mx-auto p-2 poppins-regular rounded-3xl mb-2 text-xs bg-[#b5e5ff]`}
@@ -68,13 +68,11 @@ const SidePanel = () => {
           iconName={"Help"}
           path={"/help"}
         />
+         <div className={`flex flex-col gap-[10x] items-center w-full mt-10`}>
+        <SideIconContainer Icon={IoIosLogOut} iconName={"Logout"} />
       </div>
-      <div className={`flex flex-col gap-[0x] items-center w-full mt-5`}>
-      <button onClick={handleLogout}>
-        <IoIosLogOut />
-        Logout
-      </button>
-    </div>
+      </div>
+      
     </div>
   );
 };
