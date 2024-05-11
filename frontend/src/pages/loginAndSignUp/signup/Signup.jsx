@@ -4,7 +4,8 @@ import "./SignUpMain.css";
 import Logo from "../images/logo.png";
 import FirstRow from "./FirstRow";
 import SecondRow from "./SecondRow";
-// import ThirdRow from "./ThirdRow";
+import ThirdRow from "./ThirdRow";
+import { FaPaperclip } from "react-icons/fa6";
 
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -115,14 +116,165 @@ const Signup = () => {
         {/* First Row  */}
         <form method="post"  encType="multipart/form-data"
             onSubmit={registerSubmit} className="w-full h-full">
-          <FirstRow />
+          <div
+        className="flex w-[90%] h-[68px] gap-5 absolute top-[32%] 
+        left-[6%]  "
+      >
+        <div className="flex flex-col">
+          <label className="Label ">Full Name</label>
+          <input
+            onChange={registerDataChange}
+            value={name}
+            required
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Your full name"
+            className=" pl-[20px] "
+          />
+        </div>
+
+        <div className="flex  flex-col">
+          <label className="Label ">Email Address</label>
+          <input
+            onChange={registerDataChange}
+            value={email}
+            required
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Email Address"
+            className=" pl-[20px] "
+          />
+        </div>
+
+        <div className="flex  flex-col">
+          <label className="Label ">Age</label>
+          <input
+            type="text"
+            onChange={registerDataChange}
+            value={age}
+            name="age"
+            id="age"
+            
+            placeholder="0"
+            className="input0 pl-[20px] "
+          />
+        </div>
+
+        <div className="flex  flex-col">
+          <label className="Label ">Gender</label>
+          <select
+           required
+           onChange={registerDataChange}
+           value={gender}
+           name="gender"
+           id="gender"
+           className="rounded-[25px] pl-[20px]">
+            <option>Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
 
           {/* Second Row */}
-          <SecondRow />
+          <div
+          className="flex w-[90%] h-[68px] gap-5 absolute top-[47%] 
+         left-[6%]  "
+        >
+          <div className="flex flex-col">
+            <label className="Label ">School Name</label>
+            <input
+              onChange={registerDataChange}
+              value={school}
+              name="school"
+              id="school"
+              
+              type="text"
+              placeholder="School name"
+              className=" pl-[20px] "
+            />
+          </div>
+
+          <div className="flex  flex-col">
+            <label className="Label ">Batch</label>
+            <input
+              onChange={registerDataChange}
+              value={batch}
+              name="batch"
+              id="batch"
+              type="text"
+              placeholder="Batch number "
+              className=" pl-[20px] "
+            />
+          </div>
+
+          <div className="flex  flex-col">
+            <label className="Label ">Mobile Number (Student)</label>
+            <input
+              onChange={registerDataChange}
+              value={studentmobile}
+              name="studentmobile"
+              type="text"
+              required
+              placeholder="Mobile  number "
+              className=" pl-[20px] "
+            />
+          </div>
+        </div>
 
           {/* Third Row */}
 
-          {/* <ThirdRow /> */}
+          <div
+          className="flex w-[90%] h-[68px] gap-5 absolute top-[62%] 
+        left-[6%]  "
+        >
+          <div className="flex flex-col">
+            <label className="Label ">Mobile Number (Parent)</label>
+            <input
+              onChange={registerDataChange}
+              value={parentmobile}
+              name="parentmobile"
+              type="text"
+              required
+              placeholder="Mobile number"
+              className=" pl-[20px] "
+            />
+          </div>
+
+          <div className="flex  flex-col">
+            <label className="Label ">Password</label>
+            <input
+              onChange={registerDataChange}
+              name="password"
+              required
+              value={password}
+              id="password"
+              type="password"
+              placeholder="Set password"
+              className=" pl-[20px] "
+            />
+          </div>
+
+          <div className="flex  flex-col">
+            
+            <label className="Label ">Upload Id </label>
+            
+            <label className="File text-[#999999]">
+              Choose file <FaPaperclip className="absolute 
+              bottom-[1.1vw] right-[2.5%] fill-[#666666]"/>
+              <input
+               onChange={registerDataChange}
+               type="file"
+               accept="image/*"
+               name="avatar"
+               id="photo"
+               className=" pl-[20px] " />
+            </label>
+            
+          </div>
+        </div>
 
           {/* Submit button */}
 
