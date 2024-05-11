@@ -1,4 +1,4 @@
-// import React from 'react';
+// import React from "react";
 import styles from "./sidepanel.module.css";
 import "../../styles/global.css";
 import SideIconContainer from "../sideIconConatiner/SideIconContainer";
@@ -7,21 +7,9 @@ import { RiTaskFill } from "react-icons/ri";
 import { FaRegCalendar } from "react-icons/fa6";
 import { MdAssignment } from "react-icons/md";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-<<<<<<< HEAD
-import { IoMdHelpCircle } from "react-icons/io";
-import { IoIosLogOut } from "react-icons/io";
-
-const SidePanel = () => {
-  return (
-    <div className={`${styles.body}`}>
-      <div className={`${styles.pictureContainer}`}>
-        <div className={`${styles.pictureDiv}`}></div>
-      </div>
-      <div className={`${styles.studentDetailsContainer} mt-14 text-center`}>
-=======
 import { IoMdHelpCircle, IoMdLogOut } from "react-icons/io";
-import { IoIosLogOut } from "react-icons/io";
 import axios from "axios";
+
 const handleLogout = async () => {
   try {
     await axios.get("/api/logout");
@@ -32,14 +20,20 @@ const handleLogout = async () => {
     console.error("Error logging out:", error);
   }
 };
+
 const SidePanel = () => {
   return (
-    <div className={`${styles.body}`}  style={{ backgroundColor: 'white' }}>
-      <div className={`${styles.pictureContainer}`} style={{ backgroundColor: 'white' }}>
-        <div className={`${styles.pictureDiv}`} ></div>
+    <div className={`${styles.body}`} style={{ backgroundColor: "white" }}>
+      <div
+        className={`${styles.pictureContainer}`}
+        style={{ backgroundColor: "white" }}
+      >
+        <div className={`${styles.pictureDiv}`}></div>
       </div>
-      <div className={`${styles.studentDetailsContainer} mt-14 text-center`} style={{ backgroundColor: 'white' }}>
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
+      <div
+        className={`${styles.studentDetailsContainer} mt-14 text-center`}
+        style={{ backgroundColor: "white" }}
+      >
         <h1 className={`text-2xl poppins-semibold mb-2`}>Patrick Dash R</h1>
         <div
           className={`w-2/5 mx-auto p-2 poppins-regular rounded-3xl mb-2 text-xs bg-[#b5e5ff]`}
@@ -81,18 +75,12 @@ const SidePanel = () => {
           iconName={"Help"}
           path={"/help"}
         />
-<<<<<<< HEAD
+        <SideIconContainer
+          Icon={IoMdLogOut}
+          iconName={"Logout"}
+          onClick={handleLogout}
+        />
       </div>
-      <div className={`flex flex-col gap-[10x] items-center w-full mt-10`}>
-        <SideIconContainer Icon={IoIosLogOut} iconName={"Logout"} />
-      </div>
-=======
-         <div className={`flex flex-col gap-[10x] items-center w-full mt-10`}>
-        <SideIconContainer Icon={IoIosLogOut} iconName={"Logout"} />
-      </div>
-      </div>
-      
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
     </div>
   );
 };
