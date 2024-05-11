@@ -15,7 +15,11 @@ export default function ThirdRow(){
           <div className="flex flex-col">
             <label className="Label ">Mobile Number (Parent)</label>
             <input
+              onChange={registerDataChange}
+              value={parentmobile}
+              name="parentmobile"
               type="text"
+              required
               placeholder="Mobile number"
               className=" pl-[20px] "
             />
@@ -24,6 +28,11 @@ export default function ThirdRow(){
           <div className="flex  flex-col">
             <label className="Label ">Password</label>
             <input
+              onChange={registerDataChange}
+              name="password"
+              required
+              value={password}
+              id="password"
               type="password"
               placeholder="Set password"
               className=" pl-[20px] "
@@ -37,7 +46,13 @@ export default function ThirdRow(){
             <label className="File text-[#999999]">
               Choose file <FaPaperclip className="absolute 
               bottom-[1.1vw] right-[2.5%] fill-[#666666]"/>
-              <input type="file" className=" pl-[20px] " />
+              <input
+               onChange={registerDataChange}
+               type="file"
+               accept="image/*"
+               name="avatar"
+               id="photo"
+               className=" pl-[20px] " />
             </label>
             
           </div>
