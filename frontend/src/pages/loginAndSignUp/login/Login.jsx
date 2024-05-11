@@ -1,7 +1,7 @@
-import React from "react";
-import logo from '../images/logo.png';
-import DownPart from './DownPart';
-import FormPart from './FormPart';
+// import React from "react";
+import logo from "../images/logo.png";
+import DownPart from "./DownPart";
+import FormPart from "./FormPart";
 
 const Login = () => {
   return (
@@ -12,7 +12,9 @@ const Login = () => {
           <img src={logo} alt="Focus Realm Logo" />
         </div>
         <div className="flex pt-[9%] justify-center">
-          <div className="text-[rgb(34,34,34)] text-[14px] font-normal">Welcome to Focus Realm Portal</div>
+          <div className="text-[rgb(34,34,34)] text-[14px] font-normal">
+            Welcome to Focus Realm Portal
+          </div>
         </div>
         <FormPart />
       </div>

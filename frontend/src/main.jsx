@@ -19,12 +19,9 @@ import {
   MainProfilePage,
   DetailedAnalytics,
 } from "./pages/!mainExports.js";
-<<<<<<< HEAD
-=======
 import AppTeacher from "./AppTeacher.jsx";
 import HomeTeacher from "./pages/home/HomeTeacher.jsx";
 import TeacherHomework from "./pages/home/TeacherHomework.jsx";
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
 
 const router = createBrowserRouter([
   {
@@ -35,10 +32,6 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <Signup />,
   },
-<<<<<<< HEAD
-=======
-  
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
   {
     path: "/",
     element: <App />,
@@ -87,8 +80,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-<<<<<<< HEAD
-=======
   {
     path: "/teacher",
     element: <AppTeacher />,
@@ -111,16 +102,14 @@ const router = createBrowserRouter([
       },
       {
         path: "teacherhomework",
-        element: <TeacherHomework/>,
+        element: <TeacherHomework />,
       },
       {
         path: "help",
         element: <Help />,
       },
-      
     ],
   },
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
