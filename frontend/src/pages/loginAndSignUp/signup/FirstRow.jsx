@@ -1,4 +1,4 @@
-import { registerDataChange } from "./Signup";
+import  registerDataChange  from "./Signup";
 
 export default function FirstRow() {
   return (

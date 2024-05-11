@@ -4,8 +4,8 @@ import "./SignUpMain.css";
 import Logo from "../images/logo.png";
 import FirstRow from "./FirstRow";
 import SecondRow from "./SecondRow";
-import ThirdRow from "./ThirdRow";
-export {registerDataChange};
+// import ThirdRow from "./ThirdRow";
+
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -122,7 +122,7 @@ const Signup = () => {
 
           {/* Third Row */}
 
-          <ThirdRow />
+          {/* <ThirdRow /> */}
 
           {/* Submit button */}
 
@@ -144,7 +144,7 @@ const Signup = () => {
         <div className="flex justify-center relative bottom-[20%]">
           <div className="text">
             Having an Focus Realm account?{" "}
-            <a className="text-[#0148B7]" href="#">
+            <a className="text-[#0148B7]" href="">
               Login here
             </a>
           </div>

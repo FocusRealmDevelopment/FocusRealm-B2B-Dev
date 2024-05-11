@@ -1,4 +1,5 @@
 import { FaPaperclip } from "react-icons/fa6";
+import  registerDataChange  from "./Signup";
 
 
 
