@@ -1,0 +1,45 @@
+.body {
+    border-radius: 24px;
+  }
+  
+  /* start of pictureContainer */
+  .pictureContainer {
+    position: relative;
+    background-image: url("../../assets/images/Bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #40b4f1;
+  }
+  
+  .pictureContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #40b3f16a;
+    border-radius: 24px 24px 0 0;
+  }
+  
+  .pictureDiv {
+    height: 130px;
+    width: 50%;
+    background-image: url("../../assets/images/profile.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border: 7px solid white;
+    border-radius: 24px;
+    box-shadow: 0px 4px 25px 0px #00000026;
+  }
+  /* end of pictureContainer */
+  

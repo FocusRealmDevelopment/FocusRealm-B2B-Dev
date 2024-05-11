@@ -1,0 +1,180 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.rounded-box-teacher {
+  border-radius: 20px; /* Adjust the border-radius to change the roundness */
+  padding: 20px; /* Add padding to create space inside the box */
+  background-color: #ffffff; /* Add a background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  height: 100px;/* Add a shadow effect */
+  font-family: 'Poppins', sans-serif;
+  
+}
+.back-arrow {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+.teacher{
+  padding-bottom: 20px;
+}
+
+.study-materials {
+  margin-left: 10px;
+  font-size: 1.3rem; /* Add margin to separate from the arrow icon */
+}
+.content {
+  margin-left: 10px;
+}
+
+.h2 {
+  margin-top: 10px; 
+  font-family: 'Poppins', sans-serif;/* Add margin to separate from the h1 */
+}  
+.see-more {
+  color: blue;
+  padding-top: 20px;
+}
+.bold {
+  font-weight: 400;
+}
+.materials {
+  margin-top: 20px; 
+  font-family: 'Poppins', sans-serif;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically *//* Adjust the margin-top to create space between the rounded box and the "Materials" text */
+}
+.gray{
+  color: rgb(150, 150, 150);
+}
+.bluebox{
+  border-radius: 10px;
+  background-color: #a4dcfa;
+  width: 170px;
+  padding: auto;
+  height: 30px;
+  margin-left: 20px;
+}
+.lectures{
+  color: blue;
+  font-size: x-large;
+  padding-top: 50px;
+  font-weight: 600;
+ 
+}
+.rounded-box-small {
+  display: flex;
+  /* justify-content: center; */ /* Remove this line */
+  /* align-items: center; */ /* Remove this line */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pdf-container {
+  display: flex;
+  align-items: center;
+}
+.sub-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.small-box{
+  margin-top: 10px;
+  
+}
+.title{
+  margin-left: 10px;
+}
+.rounded-box-small-new{
+  display: flex;
+  border-radius: 10px;
+  background-color: #fd0404;
+  width: 110px;
+  
+  height: 25px;
+  margin-left: 20px;
+}
+
+.centered-text {
+  display: flex;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  color: white;
+   /* Remove default margin */
+}
+.rounded-box-small-new-submit{
+  display: flex;
+  border-radius: 10px;
+  background-color: #1504fd;
+  width: 220px;
+  
+  height: 25px;
+  margin-left: 110px;
+}
+
+.arrow{
+  padding-top: 4px;
+  padding-left: 15px;
+}
+.lec-arrow{
+  display: flex;
+  align-items: center;
+}
+.up-arrow{
+  margin-left: 620px;
+  margin-top: 50px;
+}
+.up-arrow-1{
+  margin-left: 620px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.up-arrow-2{
+  margin-left: 555px;
+}
+.up-arrow-3{
+  margin-left: 620px;
+  margin-top: 10px;
+}
+.rounded-box-small-new-blue{
+  display: flex;
+  border-radius: 10px;
+  background-color: #b5e5ff;
+  width: 120px;
+  padding-left: 5px;
+  height: 25px;
+  margin-left: 20px;
+}
+.search{
+  display: flex;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 210px;
+  padding: 5px;
+  height: 35px;
+  margin-left: 100px;
+}
+.lens{
+  padding: 5px;
+}
+.rounded-box-small-add-new{
+  display: flex;
+    border-radius: 10px;
+    background-color: #1504fd;
+    width: 110px;
+    margin-top: -28px;
+    height: 35px;
+    margin-left: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.plus{
+  padding-top: 5px;
+}
