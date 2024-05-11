@@ -1,4 +1,5 @@
 // import React from "react";
+<<<<<<< HEAD
 
 import logo from '../images/logo.png';
 import DownPart from './DownPart';
@@ -42,6 +43,10 @@ const Login = () => {
     
   </div>
 </>;
+=======
+const Login = () => {
+  return <div>This is the Login Page.</div>;
+>>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
 };
 
 export default Login;

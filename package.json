@@ -36,7 +36,10 @@
     "passport-google-oauth2": "^0.2.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-oauth": "^1.0.0",
+<<<<<<< HEAD
     "react-redux": "^9.1.2",
+=======
+>>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
     "react-session": "^0.0.1",
     "socket.io": "^4.7.5",
     "validator": "^13.11.0"

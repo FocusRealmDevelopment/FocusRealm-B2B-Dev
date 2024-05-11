@@ -1,5 +1,5 @@
 // import React from 'react';
-import styles from "./sidepanel.module.css";
+import styles from "./sidepanelteacher.module.css";
 import "../../styles/global.css";
 import SideIconContainer from "../sideIconConatiner/SideIconContainer";
 import { MdHomeFilled } from "react-icons/md";
@@ -7,18 +7,6 @@ import { RiTaskFill } from "react-icons/ri";
 import { FaRegCalendar } from "react-icons/fa6";
 import { MdAssignment } from "react-icons/md";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-<<<<<<< HEAD
-import { IoMdHelpCircle } from "react-icons/io";
-import { IoIosLogOut } from "react-icons/io";
-
-const SidePanel = () => {
-  return (
-    <div className={`${styles.body}`}>
-      <div className={`${styles.pictureContainer}`}>
-        <div className={`${styles.pictureDiv}`}></div>
-      </div>
-      <div className={`${styles.studentDetailsContainer} mt-14 text-center`}>
-=======
 import { IoMdHelpCircle, IoMdLogOut } from "react-icons/io";
 import { IoIosLogOut } from "react-icons/io";
 import axios from "axios";
@@ -32,35 +20,30 @@ const handleLogout = async () => {
     console.error("Error logging out:", error);
   }
 };
-const SidePanel = () => {
+const SidePanelTeacher = () => {
   return (
     <div className={`${styles.body}`}  style={{ backgroundColor: 'white' }}>
       <div className={`${styles.pictureContainer}`} style={{ backgroundColor: 'white' }}>
         <div className={`${styles.pictureDiv}`} ></div>
       </div>
       <div className={`${styles.studentDetailsContainer} mt-14 text-center`} style={{ backgroundColor: 'white' }}>
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
-        <h1 className={`text-2xl poppins-semibold mb-2`}>Patrick Dash R</h1>
+        <h1 className={`text-2xl poppins-semibold mb-2`}>Vimala Raman</h1>
         <div
           className={`w-2/5 mx-auto p-2 poppins-regular rounded-3xl mb-2 text-xs bg-[#b5e5ff]`}
         >
-          8 Grade
+          Teacher
         </div>
-        <div
+        {/* <div
           className={`poppins-regular text-[12px] text-[#666666] ${styles.schoolName}`}
         >
           Horizon Public School, Manali
-        </div>
+        </div> */}
       </div>
       <div
         className={`${styles.iconContainer} flex flex-col gap-[10x] items-center w-full mt-10`}
       >
-        <SideIconContainer Icon={MdHomeFilled} iconName={"Home"} path={"/"} />
-        <SideIconContainer
-          Icon={RiTaskFill}
-          iconName={"Tasks"}
-          path={"/task"}
-        />
+        <SideIconContainer Icon={MdHomeFilled} iconName={"Home"} path={"/teacher"} />
+        
         <SideIconContainer
           Icon={FaRegCalendar}
           iconName={"Calendar"}
@@ -81,20 +64,13 @@ const SidePanel = () => {
           iconName={"Help"}
           path={"/help"}
         />
-<<<<<<< HEAD
-      </div>
-      <div className={`flex flex-col gap-[10x] items-center w-full mt-10`}>
-        <SideIconContainer Icon={IoIosLogOut} iconName={"Logout"} />
-      </div>
-=======
          <div className={`flex flex-col gap-[10x] items-center w-full mt-10`}>
         <SideIconContainer Icon={IoIosLogOut} iconName={"Logout"} />
       </div>
       </div>
       
->>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
     </div>
   );
 };
 
-export default SidePanel;
+export default SidePanelTeacher;

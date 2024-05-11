@@ -1,5 +1,6 @@
 // import React from 'react';
 
+<<<<<<< HEAD
 import "./SignUpMain.css";
 import Logo from "../images/logo.png";
 import FirstRow from "./FirstRow";
@@ -304,6 +305,10 @@ const Signup = () => {
       </div>
     </>
   );
+=======
+const Signup = () => {
+  return <div>This is a SignUp Page.</div>;
+>>>>>>> 025bb205962fa751363d45f5934a9eec8d952db8
 };
 
 export default Signup;
