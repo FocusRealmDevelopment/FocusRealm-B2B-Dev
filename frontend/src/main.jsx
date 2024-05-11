@@ -19,6 +19,9 @@ import {
   MainProfilePage,
   DetailedAnalytics,
 } from "./pages/!mainExports.js";
+import AppTeacher from "./AppTeacher.jsx";
+import HomeTeacher from "./pages/home/HomeTeacher.jsx";
+import TeacherHomework from "./pages/home/TeacherHomework.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,7 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <Signup />,
   },
+  
   {
     path: "/",
     element: <App />,
@@ -75,6 +79,37 @@ const router = createBrowserRouter([
         path: "detailed-analytics",
         element: <DetailedAnalytics />,
       },
+    ],
+  },
+  {
+    path: "/teacher",
+    element: <AppTeacher />,
+    children: [
+      {
+        path: "",
+        element: <HomeTeacher />,
+      },
+      {
+        path: "task",
+        element: <Task />,
+      },
+      {
+        path: "calendar",
+        element: <Calendar />,
+      },
+      {
+        path: "forum",
+        element: <Forum />,
+      },
+      {
+        path: "teacherhomework",
+        element: <TeacherHomework/>,
+      },
+      {
+        path: "help",
+        element: <Help />,
+      },
+      
     ],
   },
 ]);
