@@ -17,6 +17,7 @@ import {
 
 import { CloseSVG } from "../../assets/images";
 import { Img, Button, Input } from "../../components";
+import pdfIcon from "../../assets/images/pdf.png";
 const TeacherHomework = () => {
   const [searchBarValue, setSearchBarValue] = React.useState("");
   return (
@@ -24,44 +25,57 @@ const TeacherHomework = () => {
       <div className="container">
         <div className="rounded-box-teacher">
           <div className="back-arrow">
-            <FaArrowLeft />
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="26"
+                height="26"
+                rx="13"
+                fill="#4F81D1"
+                fill-opacity="0.2"
+              />
+              <path
+                d="M10.3928 12.3572H18V13.6429H10.3928L13.7452 17.0909L12.8614 18L8 13L12.8614 8L13.7452 8.90909L10.3928 12.3572Z"
+                fill="#666666"
+              />
+            </svg>
+
             <div style={{ padding: "5px" }}>
-              <FaFilePdf />
+              <img src={pdfIcon} alt="PDF Icon" />
             </div>
+
             <h1 className="study-materials ">Assignment on Chemistry 1</h1>
           </div>
 
           <div className="teacher">
             <h1>
-              Class: <span className="see-more">10 B</span> Subject:
+              Class: <span className="see-more">10 B</span>{" "}
+              <span className="subject">Subject:</span>
               <span className="see-more">Chemistry</span>
               <div className="container">
-              <div className="days-left">3 days left</div>
+                <div className="days-left">3 days left</div>
+                <div className="rounded-box-small-new-blue">
+                  <h3>442 Submissions</h3>
+                </div>
               </div>
             </h1>
           </div>
         </div>
         <div className="container">
           <div className="materials">
-            <h1 className="study-materials bold">Materials</h1>
-            <div className="rounded-box-small-new-blue">
-              <h3>442 Materials</h3>
+            <h1 className="study-materials">Submissions</h1>
+          </div>
+          <div className="search">
+            <div className="lens">
+              <FaSearch />
             </div>
 
-            <div className="search">
-              <div className="lens">
-                <FaSearch />
-              </div>
-              <div className="container">
-                <h3>Search materials</h3>
-                <div className="rounded-box-small-add-new">
-                  <h2 className="centered-text">Add New </h2>
-                  <div className="plus">
-                    <FaPlus />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3 className="search-materials">Search students</h3>
           </div>
           <div className="lec-arrow">
             <h1 className="lectures">Lectures</h1>

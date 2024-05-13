@@ -7,21 +7,24 @@
     padding: 20px; /* Add padding to create space inside the box */
     background-color: #ffffff; /* Add a background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    height: 100px;/* Add a shadow effect */
+    height: 120px;/* Add a shadow effect */
     font-family: 'Poppins', sans-serif;
     
   }
   .back-arrow {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
+   
   }
   .teacher{
     padding-bottom: 20px;
+    margin-top: 10px;
   }
   
   .study-materials {
     margin-left: 10px;
-    font-size: 1.3rem; /* Add margin to separate from the arrow icon */
+    font-size: 1.3rem; 
+    font-weight: 500;/* Add margin to separate from the arrow icon */
   }
   .content {
     margin-left: 10px;
@@ -32,7 +35,8 @@
     font-family: 'Poppins', sans-serif;/* Add margin to separate from the h1 */
   }  
   .see-more {
-    color: blue;
+    color:  #0148B7;
+    
     padding-top: 20px;
   }
   .bold {
@@ -146,20 +150,25 @@
   .rounded-box-small-new-blue{
     display: flex;
     border-radius: 10px;
-    background-color: #b5e5ff;
-    width: 120px;
+    background-color:  #B5E5FF;
+    width: 150px;
     padding-left: 5px;
     height: 25px;
-    margin-left: 20px;
+    margin-left: 420px;
+    margin-top: -25px;
   }
   .search{
-    display: flex;
+   
     border-radius: 20px;
     background-color: #ffffff;
-    width: 210px;
-    padding: 5px;
-    height: 35px;
-    margin-left: 100px;
+    width: 220px;
+    padding: 10px;
+    height: 45px;
+    margin-top: 35px;
+    margin-left: 0px;
+    color:  #666666;
+    
+    
   }
   .lens{
     padding: 5px;
@@ -181,9 +190,15 @@
   .days-left{
     display: flex;
     border-radius: 10px;
-    background-color: #fd0404;
-    width: 110px;
+    background-color:  #BE0000;
+    width: 100px;
     margin-top: -25px;
     height: 25px;
-    margin-left: 250px;
+    margin-left: 270px;
+    padding-left: 5px;
+    color: white;
   }
+  .subject{
+    margin-left: 15px;
+  }
+  
