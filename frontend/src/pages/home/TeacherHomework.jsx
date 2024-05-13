@@ -18,6 +18,8 @@ import {
 import { CloseSVG } from "../../assets/images";
 import { Img, Button, Input } from "../../components";
 import pdfIcon from "../../assets/images/pdf.png";
+import proPic from "../../assets/images/profilePic.png";
+
 const TeacherHomework = () => {
   const [searchBarValue, setSearchBarValue] = React.useState("");
   return (
@@ -74,183 +76,256 @@ const TeacherHomework = () => {
             <div className="lens">
               <FaSearch />
             </div>
-
             <h3 className="search-materials">Search students</h3>
           </div>
-          <div className="lec-arrow">
-            <h1 className="lectures">Lectures</h1>
-            <div className="up-arrow">
-              <FaChevronUp />
-            </div>
+          <div className="three-box">
+            <div className="round-box-submitted">Submitted</div>
+            <div className="round-box-pending">Pending</div>
+            <div className="round-box-graded">Graded</div>
           </div>
-        </div>
-        <div className="rounded-box-small">
-          <div className="pdf-container">
-            <FaFilePdf />
-            <h1 className="title">Chemistry In Everyday Life</h1>
-          </div>
-        </div>
-        <div className="lec-arrow">
-          <h1 className="sub-title">Sub title here</h1>
-          <div className="up-arrow-1">
-            <FaChevronUp />
-          </div>
-        </div>
-        <div>
-          <div className="rounded-box-small">
-            <div className="pdf-container">
-              <FaFolder color="blue" />
-              <h1 className="title">Organic Chemistry All Materials</h1>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFolderOpen color="blue" />
-                <h1 className="title">Thermo Chemistry - Revision 1</h1>
-              </div>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaLink />
-                <h1 className="title">Introduction to Thermo Chemistry - 1</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="lec-arrow">
-          <h1 className="sub-title">Summarized Modules</h1>
-          <div className="up-arrow-2">
-            <FaChevronUp />
-          </div>
-        </div>
-        <div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileExcel color="green" />
-                <h1 className="title">Introduction</h1>
-              </div>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileImage />
-                <h1 className="title">Isochoric Process</h1>
-              </div>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileWord />
-                <h1 className="title">Internal Energy</h1>
-              </div>
-            </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileImage />
-                <h1 className="title">
-                  Mathematical Expression Of First Law Enthalpy Of A System{" "}
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="lec-arrow">
-          <h1 className="sub-title">Assignments</h1>
-          <div className="up-arrow-3">
-            <FaChevronUp />
-          </div>
-        </div>
-        <div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFilePdf />
-                <h1 className="title">Assignment on Chemistry 1</h1>
-                <div className="rounded-box-small-new">
-                  <h2 className="centered-text">3 days left</h2>
+
+          <div className="student-box">
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
                 </div>
-                <div className="rounded-box-small-new-submit">
-                  <h2 className="centered-text">Grade Assignment</h2>
-                  <div className="arrow">
-                    <FaArrowRight />
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFolder color="blue" />
-                <h1 className="title">Thermodynamics-All Assignments</h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFolderOpen color="blue" />
-                <h1 className="title">
-                  Chemistry In Everyday Life-All Assignments
-                </h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFilePdf />
-                <h1 className="title">Assignement on Chemistry 2</h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="lec-arrow">
-          <h1 className="sub-title">Sub title here</h1>
-          <div className="up-arrow-3">
-            <FaChevronUp />
-          </div>
-        </div>
-        <div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileImage />
-                <h1 className="title">Assignement on Chemistry 3</h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileImage />
-                <h1 className="title">Assignement on Chemistry 4</h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileImage />
-                <h1 className="title">Assignement on Chemistry 5</h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="small-box">
-            <div className="rounded-box-small">
-              <div className="pdf-container">
-                <FaFileImage />
-                <h1 className="title">Assignement on Chemistry 6</h1>
+            <div className="round-student-box">
+              <div className="inside-student-box">
+                <div style={{ height: "40px", width: "40px" }}>
+                  <img src={proPic} alt="Student Icon" />
+                </div>
+              </div>
+              <div className="student-details">
+                Amith Ram
+                <div className="student-class">
+                  10 B<div className="sub-date">Submitted:</div>
+                  <div className="blue-date">Apr 28 2024</div>
+                  <div className="sub-date">File type:</div>
+                  <div className="blue-date">PDF</div>
+                  <div className="up-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+                        fill="#0148B7"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
