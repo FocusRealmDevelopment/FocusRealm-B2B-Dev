@@ -27,10 +27,9 @@ exports.joinRoom = async (req, res) => {
             }
 
             await chatGroup.save();
-            if (!req.io) {
-                return res.status(500).json({ success: false, error: "Socket instance not available" });
-            }
-            req.io.to(roomName).emit('notification', { message: `${req.user.username} has joined the room.` });
+
+
+            //  req.io.to(roomName).emit('user-joined', { userId: req.user._id });
         }
 
         res.status(200).json({ success: true, message: `Joined chat rooms ${roomNames}` });

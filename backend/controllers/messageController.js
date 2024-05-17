@@ -33,10 +33,8 @@ exports.sendMessage = async (req, res) => {
     await messageDoc.save();
 
     // Emit the message to the room using socket.io
-    if (!req.io) {
-      return res.status(500).json({ success: false, error: "Socket instance not available" });
-  }
-    req.io.to(roomId).emit('message', { sender, message });
+   
+      // req.io.to(roomId).emit('message', { sender, message });
 
     res.status(200).json({ success: true, message: 'Message sent successfully' });
   } catch (error) {

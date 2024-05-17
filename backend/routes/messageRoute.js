@@ -5,6 +5,7 @@ const { sendMessage } = require('../controllers/messageController');
 
 
 // POST route to send a message
+
 router.post('/sendMessage', isAuthenticatedUser, sendMessage);
 
 module.exports = router;
