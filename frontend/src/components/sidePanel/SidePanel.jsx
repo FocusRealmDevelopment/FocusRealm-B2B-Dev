@@ -1,112 +1,85 @@
-// import React from 'react';
+// import React from "react";
 import styles from "./sidepanel.module.css";
-import focusRealmLogo from "../../assets/images/focusRealmLogo.png";
-import schoolLogo from "../../assets/images/schoolLogo.png";
-import profilePic from "../../assets/images/profilePic.png";
-import IconContainer from "../iconConatiner/IconContainer";
-import HomeIcon from "@mui/icons-material/Home";
-import TaskIcon from "@mui/icons-material/Task";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import TextSnippetIcon from "@mui/icons-material/TextSnippet";
+import "../../styles/global.css";
+import SideIconContainer from "../sideIconConatiner/SideIconContainer";
+import { MdHomeFilled } from "react-icons/md";
+import { RiTaskFill } from "react-icons/ri";
+import { FaRegCalendar } from "react-icons/fa6";
+import { MdAssignment } from "react-icons/md";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import HelpIcon from "@mui/icons-material/Help";
-import LogoutIcon from "@mui/icons-material/Logout";
-import { NavLink } from "react-router-dom";
-import Switch from "../switch/Switch";
-import { useSelector } from "react-redux";
+import { IoMdHelpCircle, IoMdLogOut } from "react-icons/io";
+import axios from "axios";
+
+const handleLogout = async () => {
+  try {
+    await axios.get("/api/logout");
+    // Clear any client-side storage related to authentication, e.g., JWT token
+    // Redirect the user to the login page or any other appropriate page
+    window.location.href = "/login";
+  } catch (error) {
+    console.error("Error logging out:", error);
+  }
+};
 
 const SidePanel = () => {
-  const themeMode = useSelector((state) => state.theme.themeMode);
-
   return (
-    <div
-      style={{
-        backgroundColor: themeMode === "light" ? "#fff" : "rgb(44, 50, 59)",
-      }}
-      className={styles.body}
-    >
-      <NavLink to="/">
-        <div className={styles.logoContainer}>
-          <div
-            style={{
-              backgroundColor:
-                themeMode === "light"
-                  ? "rgb(216, 223, 235)"
-                  : "rgb(38, 43, 51)",
-            }}
-            className={styles.logoDiv}
-          >
-            <img src={focusRealmLogo} alt="logo-img" />
-          </div>
-          <div className={styles.logoName}>
-            <span
-              style={{
-                color:
-                  themeMode === "light"
-                    ? "rgb(42, 102, 195)"
-                    : "rgb(1, 72, 183)",
-              }}
-            >
-              Focus
-            </span>
-            <span> </span>
-            <span
-              style={{
-                color:
-                  themeMode === "light"
-                    ? "rgb(79, 129, 209)"
-                    : "rgb(79, 129, 209)",
-              }}
-            >
-              {" "}
-              Realm
-            </span>
-          </div>
-        </div>
-      </NavLink>
+    <div className={`${styles.body}`} style={{ backgroundColor: "white" }}>
       <div
-        style={{
-          backgroundColor:
-            themeMode === "light" ? "rgb(216, 223, 235)" : "rgb(49, 57, 71)",
-        }}
-        className={styles.studentInfoContainer}
+        className={`${styles.pictureContainer}`}
+        style={{ backgroundColor: "white" }}
       >
-        <div className={styles.schoolLogoContainer}>
-          <img src={schoolLogo} alt="school-logo" />
+        <div className={`${styles.pictureDiv}`}></div>
+      </div>
+      <div
+        className={`${styles.studentDetailsContainer} mt-14 text-center`}
+        style={{ backgroundColor: "white" }}
+      >
+        <h1 className={`text-2xl poppins-semibold mb-2`}>Patrick Dash R</h1>
+        <div
+          className={`w-2/5 mx-auto p-2 poppins-regular rounded-3xl mb-2 text-xs bg-[#b5e5ff]`}
+        >
+          8 Grade
         </div>
-        <div className={styles.studentContainer}>
-          <img src={profilePic} alt="student-profile-pic" />
-          <span
-            style={{
-              color:
-                themeMode === "light" ? "rgb(1, 72, 183)" : "rgb(79, 129, 209)",
-            }}
-          >
-            Student name
-          </span>
+        <div
+          className={`poppins-regular text-[12px] text-[#666666] ${styles.schoolName}`}
+        >
+          Horizon Public School, Manali
         </div>
       </div>
-      <div className={styles.navIconsContainer}>
-        <IconContainer icon={HomeIcon} iconName={"Home"} path={"/"} />
-        <IconContainer icon={TaskIcon} iconName={"Task"} path={"/task"} />
-        <IconContainer
-          icon={CalendarTodayIcon}
+      <div
+        className={`${styles.iconContainer} flex flex-col gap-[10x] items-center w-full mt-10`}
+      >
+        <SideIconContainer Icon={MdHomeFilled} iconName={"Home"} path={"/"} />
+        <SideIconContainer
+          Icon={RiTaskFill}
+          iconName={"Tasks"}
+          path={"/task"}
+        />
+        <SideIconContainer
+          Icon={FaRegCalendar}
           iconName={"Calendar"}
           path={"/calendar"}
         />
-        <IconContainer
-          icon={TextSnippetIcon}
-          iconName={"Test"}
-          path={"/test"}
+        <SideIconContainer
+          Icon={MdAssignment}
+          iconName={"Forum"}
+          path={"/forum"}
         />
-        <IconContainer
-          icon={AutoStoriesIcon}
-          iconName={"Homework"}
+        <SideIconContainer
+          Icon={AutoStoriesIcon}
+          iconName={"Homeworks"}
           path={"/homework"}
         />
-        <IconContainer icon={HelpIcon} iconName={"Help"} path={"/help"} />
-        <IconContainer icon={LogoutIcon} iconName={"Logout"} />
-        <Switch />
+        <SideIconContainer
+          Icon={IoMdHelpCircle}
+          iconName={"Help"}
+          path={"/help"}
+        />
+        <SideIconContainer
+          Icon={IoMdLogOut}
+          iconName={"Logout"}
+          onClick={handleLogout}
+        />
       </div>
     </div>
   );

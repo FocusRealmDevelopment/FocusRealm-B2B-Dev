@@ -1,28 +1,21 @@
-
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
-import { userReducer} from "../reducers/userReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { userReducer } from "../reducers/userReducer";
 import themeReducer from "../features/theme/themeSlice";
 import chatReducer from "../features/chat/chatSlice";
+import profileReducer from "../features/fetchProfile/profileSlice";
 
-const reducer=combineReducers({
-  user:userReducer,
-      theme: themeReducer,
-    chat: chatReducer,
-})
+const reducer = {
+  user: userReducer,
+  theme: themeReducer,
+  chat: chatReducer,
+  profile: profileReducer,
+};
 
+let initialState = {};
 
-
-let initialState={
-}
-
-const middleware=[thunk]
-
-const store=createStore(
-    reducer,
-    initialState,
-    composeWithDevTools(applyMiddleware(...middleware))
-)
+const store = configureStore({
+  reducer,
+  preloadedState: initialState,
+});
 
 export default store;

@@ -1,0 +1,14 @@
+.body {
+  margin: 0 auto;
+}
+.iconContainer > svg {
+  height: 20px;
+  width: 20px;
+}
+.iconContainer + span {
+  font-size: 14px;
+}
+.activeContainer > div > span > svg,
+.activeContainer > div > span {
+  color: #0148b7;
+}

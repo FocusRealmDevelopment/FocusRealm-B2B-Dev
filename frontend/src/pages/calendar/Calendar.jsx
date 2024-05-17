@@ -1,10 +1,7 @@
-// import React from 'react';
+// import React from "react";
+
 const Calendar = () => {
-  return (
-    <div>
-      <h1>This is the Calendar Page.</h1>
-    </div>
-  );
+  return <div>This is the Calendar Page.</div>;
 };
 
 export default Calendar;

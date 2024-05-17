@@ -7,3 +7,6 @@ const ErrorHandler=require("../utils/errorHandler")
 
 router.route('/uploadAssignment').post(isAuthenticatedUser,authorizeRoles("teacher"),uploadAssignment)
 
+
+
+module.exports = router;

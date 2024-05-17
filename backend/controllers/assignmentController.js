@@ -1,5 +1,5 @@
 const cloudinary = require("cloudinary").v2;
-const Assignment = require('../models/assignmentModel'); // Adjust the path as needed
+const Assignment = require('../models/assignmentSchema'); // Adjust the path as needed
 const Teacher = require('../models/teacherModel'); // Adjust the path as needed
 
 

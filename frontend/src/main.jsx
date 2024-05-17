@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { Provider } from "react-redux";
-import store  from "./store/store.js";
+import store from "./store/store.js";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   Home,
@@ -13,9 +13,15 @@ import {
   Login,
   Signup,
   Task,
-  Test,
-  ChatBox,
+  Forum,
+  Chat,
+  Profile,
+  MainProfilePage,
+  DetailedAnalytics,
 } from "./pages/!mainExports.js";
+import AppTeacher from "./AppTeacher.jsx";
+import HomeTeacher from "./pages/home/HomeTeacher.jsx";
+import TeacherHomework from "./pages/home/TeacherHomework.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,8 +49,8 @@ const router = createBrowserRouter([
         element: <Calendar />,
       },
       {
-        path: "test",
-        element: <Test />,
+        path: "forum",
+        element: <Forum />,
       },
       {
         path: "homework",
@@ -56,7 +62,51 @@ const router = createBrowserRouter([
       },
       {
         path: "/chat",
-        element: <ChatBox />,
+        element: <Chat />,
+      },
+    ],
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
+    children: [
+      {
+        path: "",
+        element: <MainProfilePage />,
+      },
+      {
+        path: "detailed-analytics",
+        element: <DetailedAnalytics />,
+      },
+    ],
+  },
+  {
+    path: "/teacher",
+    element: <AppTeacher />,
+    children: [
+      {
+        path: "",
+        element: <HomeTeacher />,
+      },
+      {
+        path: "task",
+        element: <Task />,
+      },
+      {
+        path: "calendar",
+        element: <Calendar />,
+      },
+      {
+        path: "forum",
+        element: <Forum />,
+      },
+      {
+        path: "teacherhomework",
+        element: <TeacherHomework />,
+      },
+      {
+        path: "help",
+        element: <Help />,
       },
     ],
   },

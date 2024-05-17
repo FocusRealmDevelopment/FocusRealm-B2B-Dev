@@ -1,0 +1,70 @@
+
+
+
+label {
+    color: #444444;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+    
+  }
+  
+  .File{
+      font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 20px;
+  padding-top:12px;
+      
+  }
+  
+  input,.File{
+  
+      width: 23vw;
+      height: 48px;
+      background-color: #F5F5F5;
+      border-radius: 25px;
+     
+    
+  }
+  
+  
+  select,.input0{
+      width: 10.7vw;
+      height:48px;
+      background-color: #F5F5F5;
+  }
+  
+  
+  input[type="file"] {
+      display: none;
+    }
+  
+  ::-webkit-input-placeholder,option{
+      
+      font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+      
+  }
+  
+  .text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+  
+      color: #666666;
+  }
+  
+  select{
+      color:#999999;
+  }
+  
+  
+  

@@ -1,0 +1,81 @@
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.iconContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 24px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+.iconContainer > svg {
+  position: relative;
+}
+.daysConatiner {
+  padding: 4px;
+  font-weight: bold;
+}
+.calendarBody {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+.calendarBody span {
+  text-align: center;
+}
+.days {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 16px;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.days::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days.active::before {
+  background: #3fc0857d;
+}
+.inactive {
+  color: #aaa;
+}
+.weekend {
+  padding: 8px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weekday {
+  padding: 8px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red {
+  padding: 8px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
