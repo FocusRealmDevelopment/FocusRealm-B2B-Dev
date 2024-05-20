@@ -1,0 +1,26 @@
+.body {
+  height: 28px;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.body > svg {
+  width: 18px;
+  height: 18px;
+  color: #666666;
+}
+.alertContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 8px;
+  aspect-ratio: 1/1;
+  background-color: red;
+  border-radius: 50%;
+}
