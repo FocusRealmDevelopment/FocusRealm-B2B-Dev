@@ -4,15 +4,15 @@ import Logo from "../images/logo.png";
 import { FaPaperclip } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { clearErrors, register } from "../../../actions/userAction";
+import { clearErrors, registerStudent } from "../../../actions/studentAction";
 import { schoolData } from "./data.jsx";
 
 const StudentSignup = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const { error, loading, isAuthenticated } = useSelector(
-        (state) => state.user
+    const { loading, isAuthenticated } = useSelector(
+        (state) => state.student
     );
 
     const [user, setUser] = useState({
@@ -64,7 +64,7 @@ const StudentSignup = () => {
         myForm.set("Address", address);
         myForm.set("Pincode", pincode);
         myForm.set("mobileNumberParent", parentmobile);
-        dispatch(register(myForm));
+        // dispatch(registerStudent(myForm));
     };
 
     const registerDataChange = (e) => {
@@ -83,14 +83,14 @@ const StudentSignup = () => {
     };
 
     useEffect(() => {
-        if (error) {
-            dispatch(clearErrors());
-        }
+        // if (error) {
+        //     dispatch(clearErrors());
+        // }
 
         if (isAuthenticated) {
             navigate("/account");
         }
-    }, [dispatch, error, navigate, isAuthenticated]);
+    }, [dispatch,navigate, isAuthenticated]);
 
     return (
         <>

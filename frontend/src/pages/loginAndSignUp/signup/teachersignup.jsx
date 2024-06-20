@@ -5,15 +5,15 @@ import { FaPaperclip } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { clearErrors, register } from "../../../actions/userAction";
+import { clearErrors, registerTeacher } from "../../../actions/teacherAction";
 import { schoolData } from "./data.jsx";
 
 const Signup = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const { error, loading, isAuthenticated } = useSelector(
-        (state) => state.user
+    const {  isAuthenticated } = useSelector(
+        (state) => state.teacher
     );
 
     const [user, setUser] = useState({
@@ -56,7 +56,7 @@ const Signup = () => {
         myForm.set("Address", address);
         myForm.set("Pincode", pincode);
         myForm.set("mobileNumber", studentmobile);
-        dispatch(register(myForm));
+        // dispatch(registerTeacher(myForm));
     };
 
     const registerDataChange = (e) => {
@@ -78,14 +78,14 @@ const Signup = () => {
     console.log(avatar);
 
     useEffect(() => {
-        if (error) {
-            dispatch(clearErrors);
-        }
+        // if (error) {
+        //     dispatch(clearErrors);
+        // }
 
         if (isAuthenticated) {
             navigate("/account");
         }
-    }, [dispatch, error, navigate, isAuthenticated]);
+    }, [dispatch, navigate, isAuthenticated]);
 
     return (
         <>

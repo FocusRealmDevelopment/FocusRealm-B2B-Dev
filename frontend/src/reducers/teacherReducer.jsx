@@ -14,7 +14,7 @@ import {
     
   } from "../constants/teacherConstant.jsx";
   
-  export const adminReducer = (state = { teacher: {} }, action) => {
+  export const teacherReducer = (state = { teacher: {} }, action) => {
     switch (action.type) {
       case LOGIN_REQUEST_TEACHER:
       case REGISTER_REQUEST_TEACHER:

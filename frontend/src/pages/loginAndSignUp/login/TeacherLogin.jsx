@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiKey2Line } from 'react-icons/ri';
 import { IoEyeOffOutline } from 'react-icons/io5';
@@ -29,7 +29,7 @@ const TeacherLogin = () => {
 
     const loginSubmit = (e) => {
         e.preventDefault();
-        dispatch(loginStudent(loginEmail,loginPassword))
+        // dispatch(loginStudent(loginEmail,loginPassword))
       };
 
       useEffect(()=>{

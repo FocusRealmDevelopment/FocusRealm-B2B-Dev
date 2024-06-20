@@ -12,7 +12,7 @@ import {
     LOGOUT_SUCCESS_TEACHER,
     LOGOUT_FAIL_TEACHER
     
-  } from "../constants/teacherConstants.jsx";
+  } from "../constants/teacherConstant.jsx";
 
 
 
