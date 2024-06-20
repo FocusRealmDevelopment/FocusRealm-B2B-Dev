@@ -1,22 +1,53 @@
 const catchAsyncErrors=require("./catchAsyncError")
 const ErrorHander = require("../utils/errorHandler");
 const jwt = require("jsonwebtoken");
-const User = require("../models/userModel");
+const Student = require("../models/studentModel");
+const Admin = require('../models/adminModel');
+const Teacher = require('../models/teacherModel');
 
-exports.isAuthenticatedUser = catchAsyncErrors(async (req, res, next) => {
+exports.isAuthenticatedStudent = catchAsyncErrors(async (req, res, next) => {
      const  {token}  = req.cookies;
-        //    const cookieString = document.cookie
+       
     if (!token) {
         return next(new ErrorHander("Please Login to access this resource", 401));
       }
     
       decodedData = jwt.verify(token, process.env.JWT_SECRET);
 
-      req.user = await User.findById(decodedData.id);
+      req.user = await Student.findById(decodedData.id);
 
       next();
   });
 
+
+exports.isAuthenticatedTeacher = catchAsyncErrors(async (req, res, next) => {
+  const  {token}  = req.cookies;
+    
+ if (!token) {
+     return next(new ErrorHander("Please Login to access this resource", 401));
+   }
+ 
+   decodedData = jwt.verify(token, process.env.JWT_SECRET);
+
+   req.user = await Teacher.findById(decodedData.id);
+
+   next();
+});
+
+
+exports.isAuthenticatedAdmin = catchAsyncErrors(async (req, res, next) => {
+  const  {token}  = req.cookies;
+    
+ if (!token) {
+     return next(new ErrorHander("Please Login to access this resource", 401));
+   }
+ 
+   decodedData = jwt.verify(token, process.env.JWT_SECRET);
+
+   req.user = await Admin.findById(decodedData.id);
+
+   next();
+});
 
 
   exports.authorizeRoles = (...roles) => {

@@ -1,0 +1,449 @@
+.section-gap {
+  padding-bottom: 22px;
+}
+
+/*.teacher-results-assignment-section {
+  width: 719px;
+  height: 453px;
+  padding: 20px 0px 0px 0px;
+  gap: 30px;
+  border-radius: 20px;
+  opacity: 1; 
+  background: #ffffff;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.teacher-results-assignments-content {
+  display: none;
+  box-sizing: border-box;
+}
+
+.teacher-results-assignments-content.open {
+  display: block;
+}
+.teacher-results-assignments-text {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center; 
+  padding-right: 20px; 
+}
+.teacher-gray-box-section {
+  display: flex;
+  width: 679px;
+  height: 44px;
+  gap: 0px;
+  justify-content: space-between;
+  opacity: 0px;
+}
+.teacher-results-search-students {
+  width: 200px;
+  height: 44px;
+  padding: 12px 12px 12px 12px;
+  gap: 10px;
+  border-radius: 22px 22px 22px 22px;
+  opacity: 0px;
+  display: flex;
+  background: #f7f7f7;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.teacher-results-search-students-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #666666;
+}
+.teacher-results-class-box {
+  width: 98.82px;
+  height: 44px;
+  padding: 12px 20px 17px 20px;
+  gap: 10px;
+  border-radius: 25px 25px 25px 25px;
+  opacity: 0px;
+  background: #f5f5f5;
+  margin-top: 20px;
+  display: flex;
+}
+.teacher-results-class-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #999999;
+}
+.teacher-results-section-box {
+  width: 111.82px;
+  height: 44px;
+  padding: 12px 20px 17px 20px;
+  gap: 10px;
+  border-radius: 25px 25px 25px 25px;
+  opacity: 0px;
+  background: #f5f5f5;
+  margin-top: 20px;
+  display: flex;
+}
+.teacher-results-section-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #999999;
+}
+.teacher-results-subject-box {
+  width: 112.82px;
+  height: 44px;
+  padding: 12px 20px 17px 20px;
+  gap: 10px;
+  border-radius: 25px 25px 25px 25px;
+  opacity: 0px;
+  background: #f5f5f5;
+  margin-top: 20px;
+  display: flex;
+
+}
+.teacher-results-subject-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #999999;
+}
+.teacher-results-status-box {
+  width: 104.82px;
+  height: 44px;
+  padding: 12px 20px 17px 20px;
+  gap: 10px;
+  border-radius: 25px 25px 25px 25px;
+  opacity: 0px;
+  background: #f5f5f5;
+  margin-top: 20px;
+  display: flex;
+}
+.teacher-results-status-text{
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+color: #999999;
+
+}
+.teacher-results-table{
+  width: 679px;
+height: 219px;
+gap: 0px;
+opacity: 0px;
+display: flex;
+}
+.teacher-results-table-subject{
+  width: 107px;
+height: 219px;
+gap: 30px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+margin-left: 20px;
+}
+.teacher-results-table-subject-text{
+  font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #0148B7;
+
+}
+.teacher-results-text1{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 5px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+border-bottom: 1px solid #EEEEEE;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #666666;
+
+
+}
+.teacher-results-text1-final{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 5px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #666666;
+
+
+}
+.teacher-results-table-topic{
+  width: 168px;
+height: 219px;
+gap: 30px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+
+}
+.teacher-results-text2{
+  
+width: 168px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #666666;
+border-bottom: 1px solid #EEEEEE
+}
+.teacher-results-text2-final{
+  
+  width: 168px;
+  height: 24px;
+  padding: 0px 0px 15px 0px;
+  gap: 10px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #666666;
+  
+  }
+.teacher-results-table-status{
+  width: 107px;
+height: 219px;
+gap: 30px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+
+}
+.teacher-results-text3{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+border-bottom: 1px solid #EEEEEE;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #00C020;
+
+}
+.teacher-results-text4{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+border-bottom: 1px solid #EEEEEE;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #BE0000;
+
+}
+.teacher-results-text4-final{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #BE0000;
+
+}
+.teacher-results-table-assignee{
+  width: 107px;
+height: 219px;
+gap: 30px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+
+
+}
+.teacher-results-text5{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+color: #666666;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+border-bottom: 1px solid #EEEEEE
+}
+.teacher-results-text5-final{
+  width: 107px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+color: #666666;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+
+}
+.teacher-results-table-due{
+  width: 107px;
+height: 219px;
+gap: 30px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+
+}
+.teacher-results-table-grade{
+  width: 83p;
+height: 219px;
+gap: 30px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+
+}
+.teacher-results-text6{
+  width:83px;
+height: 24px;
+padding: 0px 0px 15px 0px;
+gap: 10px;
+border: 0px 0px 1px 0px;
+opacity: 0px;
+border-bottom: 1px solid #EEEEEE
+}
+.teacher-results-45{
+  font-family: Poppins;
+font-size: 13px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #0148B7;
+
+}
+.teacher-results-slash{
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #666666;
+  
+}
+.teacher-results-50{
+  font-family: Poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 16.5px;
+text-align: left;
+color: #666666;
+
+}
+.teacher-results-18{
+  font-family: Poppins;
+font-size: 13px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #DF0000;
+
+}
+.teacher-results-49{
+  font-family: Poppins;
+font-size: 13px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #00C020;
+
+}
+.teacher-results-36{
+  font-family: Poppins;
+font-size: 13px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+color: #EDAB00;
+
+}
+.teacher-results-text6-grade {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #0148B7;
+  text-decoration: underline;
+  text-decoration-color: #0148B7;
+}
+.teacher-results-table-homework{
+  width: 679px;
+height: 219px;
+gap: 0px;
+opacity: 0px;
+display: flex;
+justify-content: space-between;
+} */

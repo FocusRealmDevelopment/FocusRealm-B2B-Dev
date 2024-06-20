@@ -1,0 +1,59 @@
+.pdfViewerContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    margin-top: 20px;
+}
+
+.pdfHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pdfTab {
+    background-color: #2c3e50;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.tabText {
+    font-size: 14px;
+}
+
+.pdfToolbar {
+    display: flex;
+    gap: 10px;
+}
+
+.toolbarItem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pdfContent {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #fff;
+}
+
+.pdfContent h3 {
+    margin-top: 0;
+}
+
+.pdfContent p {
+    margin: 10px 0;
+}

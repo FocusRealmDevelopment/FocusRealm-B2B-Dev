@@ -1,0 +1,368 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.rounded-box-teacher-new {
+  width: 717px;
+  height: 93px;
+  top: 90px;
+  left: 322px;
+  padding: 20px 20px 22px 20px;
+  gap: 17px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* For mobile devices with max-width 600px */
+@media only screen and (min-width: 600px) and (max-width: 1300px){
+  .rounded-box-teacher-new {
+    width: 100%; /* Adjust width */
+    padding: 15px; /* Adjust padding */
+    left: 0; /* Adjust left */
+    top: 0; /* Adjust top */
+  }
+}
+
+.back-arrow {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+.teacher {
+  padding-bottom: 20px;
+}
+
+.study-materials {
+  margin-left: 10px;
+  font-size: 1.3rem; /* Add margin to separate from the arrow icon */
+}
+.content {
+  margin-left: 10px;
+}
+
+.h2 {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif; /* Add margin to separate from the h1 */
+}
+.see-more-teacher-home{
+  color: blue;
+  padding-top: 20px;
+}
+.bold {
+  font-weight: 400;
+}
+.materials {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */ /* Adjust the margin-top to create space between the rounded box and the "Materials" text */
+}
+.gray {
+  color: rgb(150, 150, 150);
+}
+.bluebox {
+  border-radius: 10px;
+  background-color: #a4dcfa;
+  width: 170px;
+  padding: auto;
+  height: 30px;
+  margin-left: 20px;
+}
+.lectures {
+  color: blue;
+  font-size: x-large;
+  padding-top: 50px;
+  font-weight: 600;
+}
+.rounded-box-small-teacher-add-item {
+  display: flex;
+  /* justify-content: center; */ /* Remove this line */
+  /* align-items: center; */ /* Remove this line */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px dashed #999999;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.pdf-container {
+  display: flex;
+  align-items: center;
+}
+.sub-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.small-box {
+  margin-top: 10px;
+  
+}
+.title {
+  margin-left: 10px;
+ 
+}
+.rounded-box-small-new {
+  display: flex;
+  border-radius: 10px;
+  background-color: #fd0404;
+  width: 110px;
+
+  height: 25px;
+  margin-left: 20px;
+}
+
+.centered-text {
+  display: flex;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  color: white;
+  /* Remove default margin */
+}
+.rounded-box-small-new-submit {
+  display: flex;
+  border-radius: 10px;
+  background-color: #1504fd;
+  width: 220px;
+
+  height: 25px;
+  margin-left: 110px;
+}
+
+.arrow {
+  padding-top: 4px;
+  padding-left: 15px;
+}
+.lec-arrow {
+  display: flex;
+  align-items: center;
+}
+.up-arrow {
+  margin-left: 620px;
+  margin-top: 50px;
+}
+.up-arrow-1 {
+  margin-left: 620px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.up-arrow-2 {
+  margin-left: 555px;
+}
+.up-arrow-3 {
+  margin-left: 620px;
+  margin-top: 10px;
+}
+.rounded-box-small-new-blue {
+  display: flex;
+  border-radius: 10px;
+  background-color: #b5e5ff;
+  width: 120px;
+  padding-left: 5px;
+  height: 25px;
+  margin-left: 20px;
+}
+.search-teacher-home {
+  width: Fixed (297px)px;
+height: Hug (44px)px;
+padding: 14px 15px 14px 15px;
+gap: 10px;
+border-radius: 22px 22px 22px 22px;
+opacity: 0px;
+background: #FFFFFF;
+display: flex;
+}
+@media (min-width: 768px) {
+  .search-teacher-home {
+    max-width: none; /* Reset max-width */
+    width: auto; /* Reset width */
+    margin-left: 100px; /* Reset margin-left */
+    margin-top: 40px; /* Reset margin-top */
+  }
+}
+.text-search-teacher{
+  width: 111px;
+height: 9px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #666666;
+
+}
+.lens {
+  padding: 5px;
+}
+.rounded-box-small-add-new {
+  display: flex;
+  border-radius: 10px;
+  background-color: #1504fd;
+  width: 110px;
+  margin-top: -28px;
+  height: 35px;
+  margin-left: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.plus {
+  padding-top: 5px;
+}
+.teachermaterial {
+  display: flex;
+  flex-direction: row;
+}
+.teacher-material {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  margin-top: 40px;
+}
+.blue-second-box {
+  width: Hug (94px) px;
+  height: 44px;
+  padding: 7px 10px 6px 10px;
+  gap: 10px;
+  border-radius: 15px 15px 15px 15px;
+  opacity: 0px;
+  background-color: #b5e5ff;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+.material-search-box-teacher-home {
+  display: flex;
+  flex-direction: row;
+}
+.search-box {
+  width: 297px;
+  height: Hug (44px) px;
+  padding: 14px 15px 14px 15px;
+  gap: 10px;
+  border-radius: 22px 22px 22px 22px;
+  opacity: 0px;
+  background-color: white;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+
+.add-new-blue {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 35px;
+  padding: 8px 18px 18px 20px;
+  gap: 5px;
+  border-radius: 25px 25px 25px 25px;
+  opacity: 0px;
+  background-color: #0148b7;
+  margin-top: 45px;
+  margin-left: 130px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: white;
+}
+
+/* For mobile devices with max-width 600px */
+/* For devices with screen width between 600px and 601px */
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+  .add-new-blue {
+    width: 100px; /* Adjust width */
+    height: 60px; /* Adjust height */
+    padding: 10px 15px 15px 18px; /* Adjust padding */
+    margin-top: 45px; /* Adjust margin-top */
+    margin-left: 50px; /* Adjust margin-left */
+    font-size: 10px; /* Adjust font-size */
+    line-height: 14px; /* Adjust line-height */
+  }
+}
+
+
+.class-text-teacher{
+
+  font-family: Poppins;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+color:  #444444;
+}
+.class-name-teacher{
+  font-family: Poppins;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+color: #0148B7;
+
+}
+.blue-second-box-teacher{
+  width: 94px;
+height: 15px;
+padding: 6px 10px 6px 10px;
+gap: 10px;
+border-radius: 15px 15px 15px 15px;
+opacity: 0px;
+background: #B5E5FF;
+font-family: Poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 16.5px;
+text-align: left;
+margin-top: 42px;
+margin-left: 20px;
+width: 100%; /* Set width to 100% for mobile responsiveness */
+  max-width: 200px; /* Set a maximum width to avoid stretching on larger screens */
+  height: auto; /* Let the height adjust to the content */
+  padding: 10px; /* Adjust padding for better spacing */
+  border-radius: 15px; /* Simplify border-radius */
+  margin-top: 20px; /* Adjust margin for spacing */
+  margin-left: auto; /* Center the element horizontally */
+  margin-right: auto; /* Center the element horizontally */
+  text-align: center; /* Center the text */
+
+}
+@media (min-width: 768px) {
+  .blue-second-box-teacher {
+    width: auto; /* Reset width to auto for larger screens */
+    margin-top: 42px; /* Restore original margin-top */
+    margin-left: 20px; /* Restore original margin-left */
+    margin-right: 0; /* Reset margin-right */
+    text-align: left; /* Reset text alignment */
+  }
+}
+.teacher-info{
+  margin-top: 10px;
+}
+.sub-title-add-teacher{
+  width: 98px;
+height: 28px;
+padding: 9px 4px 9px 10px;
+gap: 5px;
+border-radius: 15px 15px 15px 15px;
+opacity: 0px;
+background: #4F81D133;
+display: flex;
+margin-top: 10px;
+
+}
+.sub-title-add-teacher-text{
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+margin-top: -5px;
+
+}

@@ -1,0 +1,94 @@
+.evaluate-assignment-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #222222;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.teacher-assignment-widget-round-box {
+  width: 264px;
+  height: 613px;
+  top: 90px;
+  left: 1059px;
+  gap: 0px;
+  border-radius: 20px 20px 20px 20px;
+  opacity: 0px;
+  background: #ffffff;
+}
+.evaluate-comment-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #444444;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.evaluate-comment-box {
+  width: 204px;
+  height: 93px;
+  padding: 20px 15px 20px 15px;
+  gap: 10px;
+  border-radius: 22px 22px 22px 22px;
+  opacity: 0px;
+  background: #f5f5f5;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.evaluate-comment-box-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #66666666;
+}
+.evaluate-comment-box-marks {
+    width: 204px;
+    height: 49px;
+    padding: 20px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 25px 25px 25px 25px;
+    opacity: 0px;
+    background: #F5F5F5;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.evaluate-mark-box-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  colors: #444444;
+  padding-left: 20px;
+  padding-top: -10px;
+}
+.evaluate-submit-button{
+    width: 204px;
+    height: 40px;
+    top: 535px;
+    left: 1079px;
+    padding-top: 10px;
+    padding-left: 50px;
+    gap: 10px;
+    border-radius: 20px 20px 20px 20px;
+    opacity: 0px;
+    background: #0148B7;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.evaluate-button-text{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #F5F5F5;
+}

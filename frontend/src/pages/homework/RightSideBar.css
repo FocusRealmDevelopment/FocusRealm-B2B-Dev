@@ -1,0 +1,250 @@
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 1080px;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.right-sidebar.visible {
+  transform: translateX(0);
+}
+
+.right-sidebar.hidden {
+  transform: translateX(100%);
+}
+
+.right-sidebar-content {
+  padding: 20px;
+}
+
+.right-side-bar-submit-your-assignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-side-bar-blue-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0148b70d;
+  margin-top: 20px;
+}
+
+.right-side-bar-blue-box-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the content */
+  width: 100%;
+  gap: 20px;
+  margin-top: 5px; /* Remove any gaps between items */
+}
+
+.right-side-bar-blue-box img {
+  margin-right: 5px; /* Optional: small margin for better visual separation */
+}
+
+.right-side-bar-red-box {
+  width: 67px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #be0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side-bar-red-box-text {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.right-side-bar-chemistry-study-materials-text {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: #444444;
+}
+
+.right-side-bar-vimala-raman-text {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16.5px;
+  text-align: left;
+  color: #0148b7;
+}
+
+.right-side-bar-blue-box-dotted {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  width: 420px;
+  height: 170px;
+  gap: 10px; /* Add some space between the icon and text */
+  border-radius: 20px;
+  background-color: #0148b70d;
+  border: 2px dashed #0148b7;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.right-side-bar-submit-an-assignement-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #0148b7;
+}
+
+.right-side-bar-click-here-to-browse-or-drop-files-here-text {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
+
+.right-side-bar-browse-text {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #0148b7;
+  text-decoration: underline;
+}
+
+.right-side-bar-assignment-on-chemistry-1 {
+  display: flex;
+  align-items: center;
+  width: 420px;
+  height: 44px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+
+.right-side-bar-assignment-on-chemistry-1 img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px; /* Adjust margin for spacing */
+}
+
+.right-side-bar-file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the start */
+  justify-content: center;
+}
+
+.file-size-3-mb {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: #888888;
+}
+
+.right-side-bar-file-type-PDF {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: #888888;
+}
+
+.right-side-bar-assignment-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #444444;
+}
+.svg-icon-wrapper {
+  margin-left: auto; /* Push the SVG icon to the right */
+}
+.right-side-bar-remarks-or-notes-box {
+  width: 420px;
+  height: 93px;
+  top: 471px;
+  left: 40px;
+  padding: 20px 15px 20px 15px;
+  gap: 10px;
+  border-radius: 22px 22px 22px 22px;
+  opacity: 0px;
+  background-color: #eeeeee;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.right-side-bar-remarks-or-notes-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #666666;
+}
+.right-side-bar-double-check-for-mistakes-text {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: #666666;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+.right-side-bar-submit-my-assignment-box {
+  display: flex; /* Add this line */
+  width: 420px;
+  height: 40px;
+  top: 630px;
+  left: 40px;
+  padding: 10px 10px 20px 18px;
+  gap: 10px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #0148b7;
+  margin-top: 20px;
+  margin-left: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+.right-side-bar-submit-my-assignment-text {
+  width: 161px;
+  height: 10px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}

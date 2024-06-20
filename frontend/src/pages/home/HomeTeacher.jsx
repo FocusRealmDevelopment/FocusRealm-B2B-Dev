@@ -25,10 +25,10 @@ const HomeTeacher = () => {
         <div className="rounded-box-teacher">
           <div className="back-arrow">
             <FaArrowLeft />
-            <h1 className="study-materials ">English</h1>
+            <h1 className="study-materials-teacher-home">English</h1>
           </div>
 
-          <div className="teacher">
+          <div className="teacher-full">
             <h1>
               Class: <span className="see-more">10 A</span>
             </h1>

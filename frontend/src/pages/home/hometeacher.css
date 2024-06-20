@@ -15,13 +15,23 @@
   display: flex;
   align-items: center; /* Align items vertically */
 }
-.teacher{
-  padding-bottom: 20px;
+.teacher-full{
+  width: 63px;
+  height: 8px;
+  gap: 0px;
+  opacity: 0px;
+  
+  margin-top: 30px;
 }
 
-.study-materials {
+.study-materials-teacher-home {
   margin-left: 10px;
-  font-size: 1.3rem; /* Add margin to separate from the arrow icon */
+  font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+/* Add margin to separate from the arrow icon */
 }
 .content {
   margin-left: 10px;

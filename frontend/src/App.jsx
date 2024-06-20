@@ -1,20 +1,38 @@
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
 import SidePanel from "./components/sidePanel/SidePanel";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import styles from "./styles/app.module.css";
-// import { useSelector } from "react-redux";
 import store from "./store/store";
-import { useEffect } from "react";
-import { loadUser } from "./actions/userAction";
+import { useEffect, useState } from "react";
+import { loadAdmin } from "./actions/adminAction";
 import WidgetPanel from "./components/widgetPanel/WidgetPanel";
-function App() {
-  // const themeMode = useSelector((state) => state.theme.themeMode);
+import TeacherAssignmentWidget from "./components/widgetPanel/widgetComponents/TeacherAssignmentWidget/TeacherAssignmentWidget";
+import Navbar from "./components/navbar/Navbar.jsx";
 
+function App() {
   useEffect(() => {
-    store.dispatch(loadUser());
+    store.dispatch(loadAdmin());
   }, []);
 
+  const location = useLocation();
+  const isTeacherAssignmentPage = location.pathname.includes(
+    "/teacher/teacherassignment"
+  );
+  const isCalendarPage = location.pathname === "/calendar";
+  const isForumPage = location.pathname === "/forum";
+
+  // Add state for right sidebar visibility
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
+
+  const handleSidebarOpen = () => {
+    setSidebarVisible(true);
+  };
+
+  const handleSidebarClose = () => {
+    setSidebarVisible(false);
+  };
+
+ 
   return (
     <div className={`${styles.body}`}>
       <div className={`${styles.navBody}`}>
@@ -22,8 +40,17 @@ function App() {
       </div>
       <div className={`${styles.mainBody}`}>
         <SidePanel />
-        <Outlet />
-        <WidgetPanel />
+        <Outlet
+          context={{ handleSidebarOpen, handleSidebarClose, isSidebarVisible }}
+        />
+        {!isSidebarVisible &&
+          !isCalendarPage &&
+          !isForumPage &&
+          (isTeacherAssignmentPage ? (
+            <TeacherAssignmentWidget />
+          ) : (
+            <WidgetPanel />
+          ))}
       </div>
     </div>
   );

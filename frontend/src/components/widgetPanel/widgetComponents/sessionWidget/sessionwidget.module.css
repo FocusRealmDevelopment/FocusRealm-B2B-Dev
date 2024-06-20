@@ -1,0 +1,95 @@
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px rgba(1, 72, 183, 0.25);
+    padding: 20px;
+    width: 263px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(1, 72, 183, 0.25);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #0148B7;
+}
+
+.title {
+    width: 202px;
+    height: 24px;
+    font: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    color: #0148B7;
+    line-height: 14.52px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.status {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.paused {
+    width: 76px;
+    height: 28px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #DF0000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+}
+
+.timer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333;
+}
+
+.resumeButton {
+    width: 223px;
+    height: 28px;
+    border-radius: 16px;
+    padding: 5px 15px;
+    background-color: #DCE6F6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #0148B7;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.resumeButton:hover {
+    background-color: #0056b3;
+    color: white;
+}

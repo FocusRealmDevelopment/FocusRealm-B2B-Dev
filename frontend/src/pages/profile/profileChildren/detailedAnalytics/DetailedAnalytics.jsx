@@ -1,8 +1,5 @@
 // import React from 'react';
 import "../../../../styles/global.css";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
-import { fetchProfile } from "../../../../features/fetchProfile/profileSlice";
 import { FaArrowLeft } from "react-icons/fa";
 import PerformanceContainer from "../../profileComponents/performanceContainer/PerformanceContainer";
 import PerformanceCard from "../../../../components/performanceCard/PerformanceCard";
@@ -16,13 +13,6 @@ import CommonContainer from "../../../../components/commonContainer/CommonContai
 import SmallCalendar from "../../../../components/smallCalendar/SmallCalendar";
 
 const DetailedAnalytics = () => {
-  const dispatch = useDispatch();
-  const profileData = useSelector((state) => state.profile.data);
-
-  useEffect(() => {
-    dispatch(fetchProfile());
-  }, [dispatch]);
-
   return (
     <div className={`${styles.body} p-4`}>
       <div className={`flex items-center gap-3`}>

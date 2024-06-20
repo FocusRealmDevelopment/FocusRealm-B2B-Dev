@@ -6,22 +6,27 @@ import { MdHomeFilled } from "react-icons/md";
 import { RiTaskFill } from "react-icons/ri";
 import { FaRegCalendar } from "react-icons/fa6";
 import { MdAssignment } from "react-icons/md";
+import { FaBrain } from 'react-icons/fa';
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import { IoMdHelpCircle, IoMdLogOut } from "react-icons/io";
-import axios from "axios";
+// import { logoutAdmin } from "../../actions/adminAction";
+// import { useDispatch, useSelector } from "react-redux"
+// import { useAlert } from "react-alert";
 
-const handleLogout = async () => {
-  try {
-    await axios.get("/api/logout");
-    // Clear any client-side storage related to authentication, e.g., JWT token
-    // Redirect the user to the login page or any other appropriate page
-    window.location.href = "/login";
-  } catch (error) {
-    console.error("Error logging out:", error);
-  }
-};
+// import { useNavigate , useLocation} from "react-router-dom";
+
 
 const SidePanel = () => {
+
+  // const navigate=useNavigate();
+  // const dispatch=useDispatch()
+  // const alert = useAlert();
+
+  // const handleLogout = () => {
+  //   dispatch(logoutAdmin());
+  //   alert.success("Logout Successfully");
+  // };
+
   return (
     <div className={`${styles.body}`} style={{ backgroundColor: "white" }}>
       <div
@@ -61,6 +66,11 @@ const SidePanel = () => {
           path={"/calendar"}
         />
         <SideIconContainer
+          Icon={FaBrain}
+          iconName={"Focus Session"}
+          path={"/focusSession"}
+        />
+        <SideIconContainer
           Icon={MdAssignment}
           iconName={"Forum"}
           path={"/forum"}
@@ -75,11 +85,11 @@ const SidePanel = () => {
           iconName={"Help"}
           path={"/help"}
         />
-        <SideIconContainer
+        {/* <SideIconContainer
           Icon={IoMdLogOut}
           iconName={"Logout"}
           onClick={handleLogout}
-        />
+        /> */}
       </div>
     </div>
   );

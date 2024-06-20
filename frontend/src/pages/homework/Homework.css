@@ -1,164 +1,291 @@
 .container {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 .rounded-box {
-    border-radius: 10px; /* Adjust the border-radius to change the roundness */
-    padding: 20px; /* Add padding to create space inside the box */
-    background-color: #ffffff; /* Add a background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    height: 155px;/* Add a shadow effect */
-    font-family: 'Poppins', sans-serif;
-    
-  }
-  .back-arrow {
+  border-radius: 10px; /* Adjust the border-radius to change the roundness */
+  padding: 20px; /* Add padding to create space inside the box */
+  background-color: #ffffff; /* Add a background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 155px; /* Add a shadow effect */
+  font-family: "Poppins", sans-serif;
+}
+.back-arrow {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+.teacher {
+  padding-bottom: 20px;
+}
+
+.study-materials-student-homework {
+  margin-left: 10px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  /* Add margin to separate from the arrow icon */
+}
+.content {
+  margin-left: 10px;
+}
+
+.h2 {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif; /* Add margin to separate from the h1 */
+}
+.see-more-student-homework {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #0148b7;
+}
+.bold {
+  font-weight: 400;
+}
+.blue-second-box-new{
+  width: 94px;
+height: 30px;
+padding: 6px 10px 6px 10px;
+gap: 10px;
+border-radius: 15px 15px 15px 15px;
+opacity: 0px;
+background: #B5E5FF;
+font-family: Poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 16.5px;
+text-align: left;
+margin-top: 42px;
+margin-left: 20px;
+
+}
+.materials {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */ /* Adjust the margin-top to create space between the rounded box and the "Materials" text */
+}
+.gray-student-homework {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.bluebox {
+  border-radius: 10px;
+  background-color: #a4dcfa;
+  width: 170px;
+  padding: auto;
+  height: 30px;
+  margin-left: 20px;
+}
+.lectures {
+  color: blue;
+  font-size: x-large;
+  padding-top: 50px;
+  font-weight: 600;
+}
+.rounded-box-small {
+  display: flex;
+  /* justify-content: center; */ /* Remove this line */
+  /* align-items: center; */ /* Remove this line */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px dashed #CCCCCC
+}
+
+.pdf-container {
+  display: flex;
+  align-items: center;
+}
+.sub-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  flex-direction: row;
+  display: flex;
+}
+.small-box {
+  margin-top: 10px;
+}
+.title {
+  margin-left: 10px;
+  
+}
+.rounded-box-small-new {
+  display: flex;
+  border-radius: 10px;
+  background-color: #fd0404;
+  width: 110px;
+
+  height: 25px;
+  margin-left: 20px;
+}
+
+.centered-text {
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  color: white;
+  /* Remove default margin */
+}
+.rounded-box-small-new-submit {
+  display: flex;
+  border-radius: 10px;
+  background-color: #1504fd;
+  width: 220px;
+
+  height: 25px;
+  margin-left: 110px;
+}
+
+.arrow {
+  padding-top: 4px;
+  padding-left: 15px;
+  margin-left: 110px;
+  margin-top: -17px;
+}
+
+  .lec-arrow {
     display: flex;
     align-items: center; /* Align items vertically */
-  }
-  .teacher{
-    padding-bottom: 20px;
-  }
-  
-  .study-materials {
-    margin-left: 10px; /* Add margin to separate from the arrow icon */
-  }
-  .content {
-    margin-left: 10px;
-  }
-  
-  .h2 {
-    margin-top: 10px; 
-    font-family: 'Poppins', sans-serif;/* Add margin to separate from the h1 */
-  }  
-  .see-more {
-    color: blue;
-  }
-  .bold {
-    font-weight: 400;
-  }
-  .materials {
-    margin-top: 20px; 
-    font-family: 'Poppins', sans-serif;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center items vertically *//* Adjust the margin-top to create space between the rounded box and the "Materials" text */
-  }
-  .gray{
-    color: rgb(150, 150, 150);
-  }
-  .bluebox{
-    border-radius: 10px;
-    background-color: #a4dcfa;
-    width: 170px;
-    padding: auto;
-    height: 30px;
-    margin-left: 20px;
-  }
-  .lectures{
-    color: blue;
-    font-size: x-large;
-    padding-top: 50px;
-    font-weight: 600;
-   
-  }
-  .rounded-box-small {
-    display: flex;
-    /* justify-content: center; */ /* Remove this line */
-    /* align-items: center; */ /* Remove this line */
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    height: 50px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .pdf-container {
-    display: flex;
-    align-items: center;
-  }
-  .sub-title{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  .small-box{
-    margin-top: 10px;
-    
-  }
-  .title{
-    margin-left: 10px;
-  }
-  .rounded-box-small-new{
-    display: flex;
-    border-radius: 10px;
-    background-color: #fd0404;
-    width: 110px;
-    
-    height: 25px;
-    margin-left: 20px;
-  }
-  
-  .centered-text {
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 5px;
-    color: white;
-     /* Remove default margin */
-  }
-  .rounded-box-small-new-submit{
-    display: flex;
-    border-radius: 10px;
-    background-color: #1504fd;
-    width: 220px;
-    
-    height: 25px;
-    margin-left: 110px;
+    justify-content: space-between;
   }
 
-  .arrow{
-    padding-top: 4px;
-    padding-left: 15px;
-  }
-  .lec-arrow{
-    display: flex;
-    align-items: center;
-  }
-  .up-arrow{
-    margin-left: 620px;
-    margin-top: 50px;
-  }
-  .up-arrow-1{
-    margin-left: 620px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .up-arrow-2{
-    margin-left: 555px;
-  }
-  .up-arrow-3{
-    margin-left: 620px;
-    margin-top: 10px;
-  }
-  .rounded-box-small-new-blue{
-    display: flex;
-    border-radius: 10px;
-    background-color: #b5e5ff;
-    width: 120px;
-    padding-left: 5px;
-    height: 25px;
-    margin-left: 20px;
-  }
-  .search{
-    display: flex;
-    border-radius: 10px;
-    background-color: #ffffff;
-    width: 210px;
-    padding-left: 5px;
-    height: 25px;
-    margin-left: 300px;
-  }
-  .lens{
-    padding: 5px;
-  }
+.up-arrow {
+  margin-left: 620px;
+  margin-top: 50px;
+}
+.up-arrow-1 {
+  margin-left: 620px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.up-arrow-2 {
+  margin-left: 555px;
+}
+.up-arrow-3 {
+  margin-left: 620px;
+  margin-top: 10px;
+}
+.rounded-box-small-new-blue {
+  display: flex;
+  border-radius: 10px;
+  background-color: #b5e5ff;
+  width: 120px;
+  padding-left: 5px;
+  height: 25px;
+  margin-left: 20px;
+}
+.search {
+  display: flex;
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 210px;
+  padding-left: 5px;
+  height: 25px;
+  margin-left: 300px;
+}
+.lens {
+  padding: 5px;
+}
+.see-more-vimala {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #0148b7;
+}
+.round-box-search-student-homework {
+  width: 297px;
+  height: 44px;
+  top: 249px;
+  left: 736px;
+  padding: 14px 15px 14px 15px;
+  gap: 10px;
+  border-radius: 22px 22px 22px 22px;
+  opacity: 0px;
+  background-color: #ffffff;
+  margin-top: 40px;
+  margin-left: 220px;
+}
+.text-search-materials {
+  flex-direction: row;
+  display: flex;
+  margin-left: 30px;
+  margin-top: -20px;
+}
+.rounded-box-small-new-student-homework-3-days {
+  width: 67px;
+  height: 18px;
+  padding: 5px 0px 0px 0px;
+  gap: 10px;
+  border-radius: 15px 15px 15px 15px;
+  opacity: 0px;
+  background-color: #be0000;
+  margin-left: 10px;
+}
+.centered-text-student-homework-3-days {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  color: white;
+  margin-left: 5px;
+  margin-top: -3px;
+}
+.rounded-box-small-new-submit-student-homework{
+  width: 159px;
+height: 26px;
+padding: 6px 10px 6px 12px;
+gap: 5px;
+border-radius: 15px 15px 15px 15px;
+opacity: 0px;
+background-color: #0148B7;
+margin-left: 220px;
+}
+.centered-text-student-homework-submit{
+  font-family: Poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 16.5px;
+text-align: left;
+color: white;
+}
+.up-arrow-student-homework-1{
+ margin-left: 500px;
+}
+.up-arrow-student-homework-2{
   
+}
+.lectures-home-work{
+  font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+text-align: left;
+color: #0148B7;
+margin-top: 20px;
+}
+.sub-title-here-text{
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+color: #444444;
+
+
+}

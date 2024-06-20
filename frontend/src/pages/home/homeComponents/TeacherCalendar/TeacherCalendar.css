@@ -1,0 +1,144 @@
+.teacher-calendar-container {
+}
+.teacher-calendar-box {
+  width: 100%;
+  height: 39.56px;
+  top: 90px;
+  left: 314px;
+  gap: 10px;
+  opacity: 0px;
+  display: flex;
+  
+}
+.teacher-calendar-text {
+  width: 94px;
+  height: 14px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+}
+.teacher-calendar-create-button {
+  width: 118.61px;
+  height: 40px;
+  top: 90px;
+  left: 1203.39px;
+  padding: 5px 25px 15px 25px;
+  gap: 10px;
+  border-radius: 20px 20px 20px 20px;
+  opacity: 0px;
+  background: #0148b7;
+  align-items: center; /* Center items vertically */
+  display: flex;
+}
+.teacher-calendar-create-button-text {
+  width: 48px;
+  height: 10px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+}
+.teacher-calendar-date{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.teacher-calendar-today{
+  width: 74px;
+height: 30px;
+padding: 5px 15px 10px 15px;
+gap: 10px;
+border-radius: 16px 16px 16px 16px;
+opacity: 0px;
+background: #DCE6F6;
+
+}
+.teacher-calendar-today-text{
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: center;
+color: #0148B7;
+
+}
+.teacher-calendar-arrow-section{
+  width: 194px;
+height: 24px;
+gap: 20px;
+opacity: 0px;
+display: flex;
+}
+.teacher-calendar-arrow-text{
+  font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+text-align: center;
+color: #000000;
+
+}
+.teacher-calendar-day-week-section{
+  width: 202px;
+height: 30px;
+gap: 0px;
+opacity: 0px;
+/* background-color: #000000; */
+}
+.teacher-results-date-big{
+  width: 775px;
+height: 61px;
+top: 259px;
+left: 388px;
+gap: 1px;
+opacity: 0px;
+margin-left: 74px;
+margin-top: 20px;
+}
+.teacher-results-date-big-date{
+  width: 132px;
+height: 61px;
+padding: 15px 0px 15px 0px;
+gap: 10px;
+border: 0px 1px 0px 0px;
+opacity: 0px;
+background: #D1DCED;
+border-right: 1px solid #0148B7
+}
+.teacher-results-date-big-date-text{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: left;
+color: #000000;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.teacher-calendar-time-text{
+  width: 40px;
+height: 7px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+line-height: 12.1px;
+text-align: left;
+color: #000000;
+
+}
+.teacher-calendar-sections{
+  display: flex;
+}
