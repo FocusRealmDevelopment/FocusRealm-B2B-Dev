@@ -239,8 +239,7 @@ exports.logout = catchAsyncErrors(async (req, res, next) => {
 
 
 
- //   super admin controllers
-
+//   super admin controllers
 //Get all admins-------super admin controllers
  exports.getAllAdmin = catchAsyncErrors(async (req, res, next) => {
   const admins = await Admin.find();

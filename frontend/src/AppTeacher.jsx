@@ -19,6 +19,11 @@ function AppTeacher() {
   const isTeacherCalendarPage = location.pathname.includes("/teacher/teachercalendar");
 
   // Add console log for debugging
+
+  console.log("Current Pathname:", location.pathname);
+  console.log("Is Teacher Assignment Page:", isTeacherAssignmentPage);
+  console.log("Is Teacher Calendar Page:", isTeacherCalendarPage);
+
   return (
     <div className={`${styles.body}`}>
       <div className={`${styles.navBody}`}>

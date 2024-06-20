@@ -25,8 +25,10 @@ import TeacherAssignment from "./pages/home/homeComponents/TeacherAssignment/Tea
 import Homework from "./components/homework/homework.jsx";
 import NewHomework from "./pages/homework/Homework.jsx"
 
+
 import { positions, transitions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+
 
 import TeacherResults from "./pages/home/homeComponents/TeacherResults/TeacherResults.jsx";
 import TeacherCalendar from "./pages/home/homeComponents/TeacherCalendar/calendar.jsx";
@@ -35,7 +37,9 @@ import StudentSignup from "./pages/loginAndSignUp/signup/StudentSignup.jsx";
 import StudentLogin from "./pages/loginAndSignUp/login/StudentLogin.jsx";
 import TeacherLogin from "./pages/loginAndSignUp/login/TeacherLogin.jsx";
 import AdminLogin from "./pages/loginAndSignUp/login/AdminLogin.jsx";
+
 import Adminsignup from "./pages/loginAndSignUp/signup/adminSignup.jsx";
+
 
 
 const router = createBrowserRouter([

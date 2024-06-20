@@ -11,14 +11,17 @@ import { PiBellSimple } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
 import "../../styles/global.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showProfileOptions, setShowProfileOptions] = useState(false);
   let hideTimeout;
+  const navigate = useNavigate();
 
   return (
     <div
-      className={`bg-inherit w-3/4 mx-auto flex items-center justify-between py-2`}
+      className={`bg-inherit w-3/4 mx-auto flex items-center justify-between py-2 cursor-pointer`}
+      onClick={() => {navigate('/')}}  
     >
       <div className={`${styles.logoContainer}`}>
         <div className={`${styles.imgContainer}`}>
